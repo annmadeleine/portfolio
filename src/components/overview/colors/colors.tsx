@@ -1,13 +1,15 @@
-// import React from 'react';
-// import colors from '../../../styles/colors.scss';
+import React from 'react';
+import { colors } from '../../../styles/colors';
 
-// const colors = () => {
-//   return (
-//       {Object.keys(colors).map((color: String) => (
-//         <li>
-//         <span>{color}</span><br /> // color name
-//       </li>
-//       )
-//     )
-//   )
-// }
+interface ColorsProps {
+    color: string
+}
+
+export default function Colors() {
+    const colorItems = colors.map((color) =>
+        <li>{color.name} - {color.colorCode}</li>
+    );
+    return (
+        <ul>{colorItems}</ul>
+    )
+}

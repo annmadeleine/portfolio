@@ -1,15 +1,15 @@
 //
-// Show color variables.
+// Button component
 //
 
 // Imports
 import React from 'react';
-import Button from './button';
+import Button, { ButtonProps } from './button';
 
 export default {
   component: Button,
   title: 'Components/Button',
 };
 
-export const Default = (args) => <Button {...args}/>;
+export const Default = (args: ButtonProps) => <Button {...args}/>;
 Default.args = { label: 'Button', disabled: false };
