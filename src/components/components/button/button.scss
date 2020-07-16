@@ -1,23 +1,22 @@
 //
-// Styling for colors
+// Styling for button
 //
 
-// Imports
 @import "../../../styles/colors";
 
 .button {
-    width: 200px;
-    height: 40px;
-    background-color: #D95B72;
-    cursor: pointer;
-    border: none;
+  width: 200px;
+  height: 40px;
+  background-color: #d95b72;
+  cursor: pointer;
+  border: none;
 
-    &:focus {
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 
-    &:disabled {
-        background-color: grey;
-        pointer-events: none;
-    }
+  &:disabled {
+    background-color: grey;
+    pointer-events: none;
+  }
 }

@@ -1,0 +1,25 @@
+//
+// Styling for color variables
+//
+
+@import "../../../styles/colors";
+
+.variableColors {
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  &__item {
+    margin: 20px;
+  }
+
+  &__preview {
+    width: 150px;
+    height: 50px;
+  }
+
+  &__info {
+    display: block;
+  }
+}
