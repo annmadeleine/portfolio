@@ -1,0 +1,23 @@
+//
+// Styling for typography variables
+//
+
+@import "../../../styles/_fonts";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-serif;
+}
+
+p {
+  font-family: $font-sansserif;
+  line-height: 1.5em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

@@ -1,0 +1,15 @@
+//
+// Styling for spacing variables
+//
+
+@import "../../../styles/_spacings";
+
+.variableSpacings {
+  &__item {
+    margin: 20px;
+  }
+
+  &__info {
+    display: block;
+  }
+}

@@ -1,0 +1,37 @@
+//
+// Styling for font variables
+//
+
+@import "../../../styles/_fonts";
+@import "../../../styles/_typography";
+
+.variableFonts {
+  &__item {
+    display: flex;
+    margin: 20px;
+
+    &--style {
+      margin: 0px 40px 0px 0px;
+    }
+
+    &--medium {
+      font-weight: $typography-medium;
+    }
+
+    &--bold {
+      font-weight: $typography-bold;
+    }
+
+    &--cursive {
+      font-style: italic;
+    }
+  }
+
+  &__preview {
+    font-size: $typography-xl;
+  }
+
+  &__info {
+    display: block;
+  }
+}
