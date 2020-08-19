@@ -1,17 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './App.scss';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./App.scss";
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-function App() {
-  return (
-    <div className="App">yay
-    </div>
-  );
-}
