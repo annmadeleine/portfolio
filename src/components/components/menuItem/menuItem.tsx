@@ -10,7 +10,15 @@ export interface MenuItemProps {
 export default function MenuItem({ label, link }: MenuItemProps) {
   return (
     <Link to={link}>
-      <div className="menu-item">{label}</div>
+      <div className="menu__item">{label}</div>
+    </Link>
+  );
+}
+
+export function MenuItemDark({ label, link }: MenuItemProps) {
+  return (
+    <Link to={link}>
+      <div className="menu__item dark">{label}</div>
     </Link>
   );
 }

@@ -1,0 +1,40 @@
+//
+// Styling for title
+//
+
+@import "../../../styles/variables";
+
+.title {
+  color: $color-grey;
+  font-family: $font-serif;
+  text-align: center;
+  text-transform: capitalize;
+
+  &.big {
+    font-size: $typography-xxl;
+  }
+
+  &.small {
+    font-size: $typography-xl;
+  }
+
+  &.dark {
+    color: $color-white;
+  }
+
+  &.rotated {
+    transform: rotate(-90deg);
+  }
+
+  &.transparent {
+    opacity: 0.2;
+  }
+
+  &__up {
+    margin: 0 $spacing-lg 0 0;
+  }
+
+  &__down {
+    margin: -$spacing-xs 0 0 0;
+  }
+}

@@ -1,0 +1,13 @@
+//
+// Styling for name
+//
+
+@import "../../../styles/variables";
+
+.name {
+  color: $color-black;
+  font-family: $font-sansserif;
+  font-size: $typography-md;
+  text-align: center;
+  text-transform: uppercase;
+}

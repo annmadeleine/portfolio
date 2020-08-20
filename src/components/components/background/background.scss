@@ -6,7 +6,7 @@
 // - Check size on all screens
 // - Check all browsers
 
-@import "../../../styles/colors";
+@import "../../../styles/variables";
 
 .background {
   position: fixed;
@@ -14,9 +14,13 @@
   height: calc(var(--vh, 1vh) * 100);
   left: 0;
   top: 0;
-  background-color: $color-secondary;
+  background-color: $color-sand;
   pointer-events: none;
   z-index: -1;
+
+  &.dark {
+    background-color: $color-black;
+  }
 
   &:after {
     content: "";

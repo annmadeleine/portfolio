@@ -1,0 +1,11 @@
+//
+// Styling for menu
+//
+
+@import "../../../styles/variables";
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: $spacing-md;
+}

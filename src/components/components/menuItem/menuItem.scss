@@ -2,17 +2,27 @@
 // Styling for menuItem
 //
 
-@import "../../../styles/colors";
-@import "../../../styles/fonts";
-@import "../../../styles/typography";
-@import "../../../styles/spacings";
+@import "../../../styles/variables";
 
-.menu-item {
+.menu__item {
   display: inline-block;
   font-family: $font-sansserif;
   font-size: $typography-sm;
   letter-spacing: $spacing-xxs;
   text-transform: uppercase;
+  color: $color-black;
+
+  &.dark {
+    color: $color-white;
+
+    &:after {
+      background-color: $color-white;
+    }
+
+    &:visited {
+      color: $color-white;
+    }
+  }
 
   &:after {
     content: "";
@@ -30,5 +40,9 @@
       transform: scaleX(1);
       transform-origin: right center;
     }
+  }
+
+  &:visited {
+    color: $color-black;
   }
 }

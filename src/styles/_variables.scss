@@ -1,0 +1,60 @@
+//
+// Color variables
+//
+
+$color-primary: #c5d5cb;
+$color-primary-light: #9fa8a3;
+$color-sand: #d9d3c7;
+$color-grey: #707070;
+
+$color-black: #000;
+$color-white: #fff;
+
+//
+// Spacing variables
+//
+
+$spacing-xxs: 0.2em;
+$spacing-xs: 0.4em;
+$spacing-sm: 0.8em;
+$spacing-md: 1em;
+$spacing-lg: 2em;
+$spacing-xl: 4em;
+
+// Measurements
+
+$time-xs: 0.6s;
+
+// Cubic Bezier
+
+$cubic-bezier: cubic-bezier(0, 0, 0, 1);
+
+//
+// Typography variables
+//
+
+// Size
+
+$typography-xxs: 0.2em;
+$typography-xs: 0.6em;
+$typography-sm: 0.8em;
+$typography-md: 1em;
+$typography-lg: 2em;
+$typography-xl: 4em;
+$typography-xxl: 6em;
+
+// Weight
+
+$typography-medium: 400;
+$typography-bold: 700;
+
+//
+// Font variables
+//
+
+// prettier-ignore
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=LibreCaslonDisplay&display=swap);
+
+$font-sansserif: "Montserrat", sans-serif;
+$font-serif: "Libre Caslon Display", serif;

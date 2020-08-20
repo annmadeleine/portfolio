@@ -4,7 +4,7 @@
 
 // Imports
 import React from "react";
-import Background from "./background";
+import Background, { BackgroundDark } from "./background";
 
 export default {
   component: Background,
@@ -12,3 +12,4 @@ export default {
 };
 
 export const Default = () => <Background />;
+export const Dark = () => <BackgroundDark />;
