@@ -5,6 +5,7 @@
 @import "../../../styles/variables";
 
 .paragraph {
+  max-width: 450px;
   color: $color-white;
   font-family: $font-sansserif;
   font-size: $typography-md;

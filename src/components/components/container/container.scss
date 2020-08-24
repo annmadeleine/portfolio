@@ -1,0 +1,31 @@
+//
+// Styling for container
+//
+
+@import "../../../styles/variables";
+
+.container {
+  display: flex;
+  width: 100%;
+  margin: $spacing-md;
+
+  .item {
+    width: 10%;
+  }
+
+  .one {
+    flex-grow: 1;
+  }
+
+  .two {
+    flex-grow: 2;
+  }
+
+  .left {
+    margin: $spacing-xxl $spacing-md $spacing-xxl $spacing-xxl;
+  }
+
+  .right {
+    margin: $spacing-xxl $spacing-xxl $spacing-xxl $spacing-md;
+  }
+}

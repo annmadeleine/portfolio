@@ -5,7 +5,7 @@ export interface TitleProps {
   labelUp?: string;
   labelDown?: string;
   label?: string;
-  transparent?: string;
+  number?: string;
 }
 
 export default function Title({ labelUp, labelDown }: TitleProps) {
@@ -19,7 +19,7 @@ export default function Title({ labelUp, labelDown }: TitleProps) {
 
 export function TitleDark({ labelUp, labelDown }: TitleProps) {
   return (
-    <div className="title big dark rotate">
+    <div className="title dark rotate small transparent">
       <h1 className="title title__up">{labelUp}</h1>
       <h1 className="title title__down">{labelDown}</h1>
     </div>
@@ -34,11 +34,11 @@ export function TitleTransparent({ label }: TitleProps) {
   );
 }
 
-export function TitleProject({ label, transparent }: TitleProps) {
+export function TitleProject({ label, number }: TitleProps) {
   return (
     <div className="title dark layered center">
       <h1 className="title small">{label}</h1>
-      <h1 className="title big transparent project">{transparent}</h1>
+      <h1 className="title big transparent project">{number}</h1>
     </div>
   );
 }

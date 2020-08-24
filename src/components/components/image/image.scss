@@ -1,0 +1,16 @@
+//
+// Styling for image
+//
+
+@import "../../../styles/variables";
+
+.image {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.header {
+  width: 100%;
+  height: 600px;
+}

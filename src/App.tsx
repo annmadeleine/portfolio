@@ -1,5 +1,6 @@
 import React from "react";
 import Info from "./info";
+import Project from "./project";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Background from "./components/components/background/background";
@@ -15,6 +16,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/info" component={Info} />
+          <Route path="/project" component={Project} />
         </Switch>
       </div>
     </Router>

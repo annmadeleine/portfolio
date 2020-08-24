@@ -26,4 +26,4 @@ export const Transparent = (args: TitleProps) => <TitleTransparent {...args} />;
 Transparent.args = { label: "Creative" };
 
 export const Project = (args: TitleProps) => <TitleProject {...args} />;
-Project.args = { label: "Project", transparent: "01" };
+Project.args = { label: "Project", number: "01" };
