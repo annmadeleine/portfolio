@@ -6,5 +6,9 @@ export interface NameProps {
 }
 
 export default function Name({ label }: NameProps) {
-  return <div className="name">{label}</div>;
+  return <h2 className="name dark">{label}</h2>;
+}
+
+export function NameTitle({ label }: NameProps) {
+  return <h2 className="name light">{label}</h2>;
 }

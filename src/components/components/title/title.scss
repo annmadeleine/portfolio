@@ -5,10 +5,10 @@
 @import "../../../styles/variables";
 
 .title {
-  color: $color-grey;
   font-family: $font-serif;
   text-align: center;
   text-transform: capitalize;
+  font-weight: normal;
 
   &.big {
     font-size: $typography-xxl;
@@ -18,16 +18,42 @@
     font-size: $typography-xl;
   }
 
+  &.light {
+    color: $color-grey;
+  }
+
   &.dark {
     color: $color-white;
   }
 
-  &.rotated {
+  &.rotate {
     transform: rotate(-90deg);
   }
 
   &.transparent {
-    opacity: 0.2;
+    opacity: $opacity-xl;
+  }
+
+  &.layered {
+    display: flex;
+    position: relative;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.project {
+    position: absolute;
+    left: 55%;
+    top: -22%;
+  }
+
+  &.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__up {

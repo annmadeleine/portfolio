@@ -4,7 +4,7 @@
 
 // Imports
 import React from "react";
-import Name, { NameProps } from "./name";
+import Name, { NameProps, NameTitle } from "./name";
 
 export default {
   component: Name,
@@ -12,4 +12,7 @@ export default {
 };
 
 export const Default = (args: NameProps) => <Name {...args} />;
+Default.args = { label: "Ann Madeleine" };
+
+export const Title = (args: NameProps) => <NameTitle {...args} />;
 Default.args = { label: "Ann Madeleine" };

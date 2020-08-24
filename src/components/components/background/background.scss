@@ -30,7 +30,7 @@
     top: -110%;
     left: -50%;
     background-image: url("../../../images/noise2.png");
-    opacity: 0.2;
+    opacity: $opacity-xl;
     animation: noise 10s steps(8) infinite;
   }
 }

@@ -5,9 +5,23 @@
 @import "../../../styles/variables";
 
 .name {
-  color: $color-black;
   font-family: $font-sansserif;
-  font-size: $typography-md;
+  font-size: $typography-lg;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 100;
+
+  &.light {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    color: $color-black;
+  }
+
+  &.dark {
+    color: $color-white;
+    font-size: $typography-md;
+    margin: 0;
+    opacity: $opacity-md;
+  }
 }

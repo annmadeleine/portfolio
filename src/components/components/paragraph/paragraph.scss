@@ -1,0 +1,18 @@
+//
+// Styling for paragraph
+//
+
+@import "../../../styles/variables";
+
+.paragraph {
+  color: $color-white;
+  font-family: $font-sansserif;
+  font-size: $typography-md;
+  text-transform: capitalize;
+  letter-spacing: $spacing-xxs;
+  line-height: 1.5;
+
+  &.right {
+    text-align: right;
+  }
+}

@@ -4,7 +4,12 @@
 
 // Imports
 import React from "react";
-import Title, { TitleProps, TitleDark, TitleTransparent } from "./title";
+import Title, {
+  TitleProps,
+  TitleDark,
+  TitleTransparent,
+  TitleProject,
+} from "./title";
 
 export default {
   component: Title,
@@ -19,3 +24,6 @@ Dark.args = { labelUp: "Creative", labelDown: "Developer" };
 
 export const Transparent = (args: TitleProps) => <TitleTransparent {...args} />;
 Transparent.args = { label: "Creative" };
+
+export const Project = (args: TitleProps) => <TitleProject {...args} />;
+Project.args = { label: "Project", transparent: "01" };

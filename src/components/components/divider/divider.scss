@@ -1,0 +1,29 @@
+//
+// Styling for divider
+//
+
+@import "../../../styles/variables";
+
+.divider {
+  display: flex;
+
+  .border {
+    flex-grow: 9;
+    height: 1px;
+    background: $color-grey;
+    margin: $spacing-xs 0 0 0;
+  }
+
+  .title {
+    color: $color-grey;
+    font-family: $font-sansserif;
+    font-size: $typography-sm;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0 0 0 $spacing-md;
+  }
+
+  .with-border {
+    flex-grow: none;
+  }
+}

@@ -6,6 +6,7 @@ import Background from "./components/components/background/background";
 import Menu from "./components/components/menu/menu";
 import MenuItem from "./components/components/menuItem/menuItem";
 import Title from "./components/components/title/title";
+import { NameTitle } from "./components/components/name/name";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ const Home = () => (
       <MenuItem link="/info" label="info"></MenuItem>
     </Menu>
     <Title labelUp="creative" labelDown="developer" />
+    <NameTitle label="Ann Madeleine" />
   </div>
 );
 
