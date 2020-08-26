@@ -12,3 +12,7 @@ export default function Paragraph({ text }: ParagraphProps) {
 export function ParagraphRight({ text }: ParagraphProps) {
   return <p className="paragraph right">{text}</p>;
 }
+
+export function ParagraphSmall({ text }: ParagraphProps) {
+  return <p className="paragraph small">{text}</p>;
+}

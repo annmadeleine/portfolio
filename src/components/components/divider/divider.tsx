@@ -17,7 +17,7 @@ export default function Divider({ title }: DividerProps) {
 export function DividerNoBorder({ title }: DividerProps) {
   return (
     <div className="divider">
-      <div className="title">{title}</div>
+      <div className="title no-margin">{title}</div>
     </div>
   );
 }

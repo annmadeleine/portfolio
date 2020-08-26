@@ -9,10 +9,22 @@ export default function Container({ children }: ContainerProps) {
   return <div className="container">{children}</div>;
 }
 
-export function OneContainer({ children }: ContainerProps) {
-  return <div className="item one left">{children}</div>;
+export function Row({ children }: ContainerProps) {
+  return <div className="row">{children}</div>;
 }
 
-export function TwoContainer({ children }: ContainerProps) {
-  return <div className="item two right">{children}</div>;
+export function RowMaxWidth({ children }: ContainerProps) {
+  return <div className="row max-width">{children}</div>;
+}
+
+export function Column({ children }: ContainerProps) {
+  return <div className="column">{children}</div>;
+}
+
+export function ItemSmall({ children }: ContainerProps) {
+  return <div className="item small">{children}</div>;
+}
+
+export function ItemBig({ children }: ContainerProps) {
+  return <div className="item big">{children}</div>;
 }

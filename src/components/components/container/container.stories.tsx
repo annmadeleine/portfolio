@@ -5,11 +5,7 @@
 // Imports
 import React from "react";
 
-import Container, {
-  OneContainer,
-  ContainerProps,
-  TwoContainer,
-} from "./container";
+import Container, { ContainerProps, ItemSmall, ItemBig } from "./container";
 import Paragraph from "../paragraph/paragraph";
 
 export default {
@@ -20,8 +16,8 @@ export default {
 export const Default = (args: ContainerProps) => <Container {...args} />;
 Default.args = { children: Paragraph };
 
-export const One = (args: ContainerProps) => <OneContainer {...args} />;
-One.args = { children: Paragraph };
+export const Small = (args: ContainerProps) => <ItemSmall {...args} />;
+Small.args = { children: Paragraph };
 
-export const Two = (args: ContainerProps) => <TwoContainer {...args} />;
-Two.args = { children: Paragraph };
+export const Big = (args: ContainerProps) => <ItemBig {...args} />;
+Big.args = { children: Paragraph };

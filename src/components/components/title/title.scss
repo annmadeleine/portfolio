@@ -42,14 +42,17 @@
     position: relative;
   }
 
-  &.center {
-    justify-content: center;
+  &.number {
+    position: absolute;
+    left: 90%;
+    top: 15%;
   }
 
   &.project {
     position: absolute;
-    left: 55%;
-    top: -22%;
+    left: 50%;
+    top: 460px;
+    transform: translate(-50%, -50%);
   }
 
   &.center {

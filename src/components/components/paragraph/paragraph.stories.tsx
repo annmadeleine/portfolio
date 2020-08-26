@@ -4,7 +4,11 @@
 
 // Imports
 import React from "react";
-import Paragraph, { ParagraphProps, ParagraphRight } from "./paragraph";
+import Paragraph, {
+  ParagraphProps,
+  ParagraphRight,
+  ParagraphSmall,
+} from "./paragraph";
 
 export default {
   component: Paragraph,
@@ -21,4 +25,9 @@ export const Right = (args: ParagraphProps) => <ParagraphRight {...args} />;
 Right.args = {
   text:
     "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. ",
+};
+
+export const Small = (args: ParagraphProps) => <ParagraphSmall {...args} />;
+Small.args = {
+  text: "The quick, brown fox.",
 };

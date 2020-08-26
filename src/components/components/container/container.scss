@@ -6,26 +6,32 @@
 
 .container {
   display: flex;
-  width: 100%;
-  margin: $spacing-md;
+  justify-content: center;
+  margin: $spacing-xxl;
 
   .item {
     width: 10%;
   }
 
-  .one {
+  .small {
     flex-grow: 1;
   }
 
-  .two {
-    flex-grow: 2;
+  .big {
+    flex-grow: 3;
   }
+}
 
-  .left {
-    margin: $spacing-xxl $spacing-md $spacing-xxl $spacing-xxl;
-  }
+.row {
+  display: flex;
+  flex-direction: row;
 
-  .right {
-    margin: $spacing-xxl $spacing-xxl $spacing-xxl $spacing-md;
+  &.max-width {
+    max-width: 600px;
   }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }

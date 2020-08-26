@@ -9,11 +9,17 @@ import Divider, {
 } from "./components/components/divider/divider";
 import Paragraph, {
   ParagraphRight,
+  ParagraphSmall,
 } from "./components/components/paragraph/paragraph";
-import Grid from "./components/components/grid/grid";
-import Container from "./components/components/container/container";
+import Container, {
+  Column,
+  RowMaxWidth,
+  ItemBig,
+  ItemSmall,
+} from "./components/components/container/container";
 import Image, { Header } from "./components/components/image/image";
 import { TitleProject } from "./components/components/title/title";
+import img from "./images/mockup.jpg";
 
 function Project() {
   return (
@@ -24,39 +30,33 @@ function Project() {
         <Name label="Ann Madeleine" />
         <MenuItemDark link="/info" label="info"></MenuItemDark>
       </Menu>
-      <Header
-        src="https://pixabay.com/get/57e7dd464d54ac14f6d1867dda35367b1c37dce25650704c_1920.jpg"
-        alt="Test"
-      />
-      <TitleProject label="Project" number="01" />
-      <Divider title="The Challange" />
+      <Header src={img} alt="Test" />
+      <TitleProject label="This" />
       <Container>
-        <Grid>
-          <DividerNoBorder title="Client" />
-          <Paragraph text="Company"></Paragraph>
-          <DividerNoBorder title="Year" />
-          <Paragraph text="Year"></Paragraph>
-          <DividerNoBorder title="Services" />
-          <Paragraph text="Service"></Paragraph>
-        </Grid>
-        <ParagraphRight text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz." />
+        <Column>
+          <Divider title="The Challange" />
+          <RowMaxWidth>
+            <ItemSmall>
+              <DividerNoBorder title="Client" />
+              <ParagraphSmall text="Company"></ParagraphSmall>
+              <DividerNoBorder title="Year" />
+              <ParagraphSmall text="Year"></ParagraphSmall>
+              <DividerNoBorder title="Services" />
+              <ParagraphSmall text="Service"></ParagraphSmall>
+            </ItemSmall>
+            <ItemBig>
+              <ParagraphRight text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz." />
+            </ItemBig>
+          </RowMaxWidth>
+          <Divider title="The Process" />
+          <Paragraph text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz." />
+          <Divider title="The Result" />
+          <Paragraph text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz." />
+          <Image src={img} alt="Test" />
+          <Image src={img} alt="Test" />
+          <Image src={img} alt="Test" />
+        </Column>
       </Container>
-      <Divider title="The Process" />
-      <Paragraph text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz." />
-      <Divider title="The Result" />
-      <ParagraphRight text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz." />
-      <Image
-        src="https://pixabay.com/get/57e7dd464d54ac14f6d1867dda35367b1c37dce25650704c_1920.jpg"
-        alt="Test"
-      />
-      <Image
-        src="https://pixabay.com/get/57e7dd464d54ac14f6d1867dda35367b1c37dce25650704c_1920.jpg"
-        alt="Test"
-      />
-      <Image
-        src="https://pixabay.com/get/57e7dd464d54ac14f6d1867dda35367b1c37dce25650704c_1920.jpg"
-        alt="Test"
-      />
     </div>
   );
 }
