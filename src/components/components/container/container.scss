@@ -7,7 +7,15 @@
 .container {
   display: flex;
   justify-content: center;
-  margin: $spacing-xxl;
+  margin: $spacing-xxl $spacing-md;
+
+  @media (min-width: $breakpoint-sm) {
+    margin: $spacing-xxl $spacing-md;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    margin: $spacing-xxl;
+  }
 
   .item {
     width: 10%;
@@ -25,13 +33,16 @@
 .row {
   display: flex;
   flex-direction: row;
-
-  &.max-width {
-    max-width: 600px;
-  }
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $breakpoint-sm) {
+    width: 60%;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    width: 50%;
+  }
 }

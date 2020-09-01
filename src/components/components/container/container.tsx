@@ -13,10 +13,6 @@ export function Row({ children }: ContainerProps) {
   return <div className="row">{children}</div>;
 }
 
-export function RowMaxWidth({ children }: ContainerProps) {
-  return <div className="row max-width">{children}</div>;
-}
-
 export function Column({ children }: ContainerProps) {
   return <div className="column">{children}</div>;
 }

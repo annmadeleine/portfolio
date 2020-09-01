@@ -13,9 +13,9 @@ import Paragraph, {
 } from "./components/components/paragraph/paragraph";
 import Container, {
   Column,
-  RowMaxWidth,
   ItemBig,
   ItemSmall,
+  Row,
 } from "./components/components/container/container";
 import Image, { Header } from "./components/components/image/image";
 import { TitleProject } from "./components/components/title/title";
@@ -31,11 +31,11 @@ function Project() {
         <MenuItemDark link="/info" label="info"></MenuItemDark>
       </Menu>
       <Header src={img} alt="Test" />
-      <TitleProject label="This" />
+      <TitleProject label="This is a test for longer" />
       <Container>
         <Column>
           <Divider title="The Challange" />
-          <RowMaxWidth>
+          <Row>
             <ItemSmall>
               <DividerNoBorder title="Client" />
               <ParagraphSmall text="Company"></ParagraphSmall>
@@ -47,7 +47,7 @@ function Project() {
             <ItemBig>
               <ParagraphRight text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz." />
             </ItemBig>
-          </RowMaxWidth>
+          </Row>
           <Divider title="The Process" />
           <Paragraph text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz." />
           <Divider title="The Result" />

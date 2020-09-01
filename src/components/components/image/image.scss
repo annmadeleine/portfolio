@@ -5,10 +5,10 @@
 @import "../../../styles/variables";
 
 .image {
-  width: 600px;
-  height: 400px;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
-  margin: $spacing-md;
+  margin: $spacing-md 0;
 }
 
 .header {
