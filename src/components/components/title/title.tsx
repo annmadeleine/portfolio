@@ -9,7 +9,7 @@ export interface TitleProps {
 
 export default function Title({ labelUp, labelDown }: TitleProps) {
   return (
-    <div className="title big light center">
+    <div className="title small light center">
       <h1 className="title title__up">{labelUp}</h1>
       <h1 className="title title__down">{labelDown}</h1>
     </div>

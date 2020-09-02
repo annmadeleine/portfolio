@@ -8,11 +8,11 @@ import Paragraph from "./components/components/paragraph/paragraph";
 import Container, {
   ItemBig,
   ItemSmall,
+  Row,
 } from "./components/components/container/container";
 import Divider from "./components/components/divider/divider";
-import Image from "./components/components/image/image";
-import logo from "./images/test.png";
 import Social from "./components/components/link/social";
+import { LogoWhite } from "./components/components/logo/logo";
 
 function Info() {
   return (
@@ -25,20 +25,22 @@ function Info() {
       </Menu>
       <Container>
         <ItemSmall>
-          <Image src={logo} alt="Test" />
+          <LogoWhite />
         </ItemSmall>
-        <ItemBig>
-          <Divider title="about" />
-          <Paragraph text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz."></Paragraph>
-          <Divider title="contact" />
-          <Social label="Email" link="mailto:madeleineolson@outlook.com" />
-          <Social
-            label="LinkedIn"
-            link="https://www.linkedin.com/in/madeleine-olson/"
-          />
-          <Social label="Github" link="https://github.com/madeleineolson" />
-          <Social label="Codepen" link="https://codepen.io/madeleine-olson" />
-        </ItemBig>
+        <Row>
+          <ItemBig>
+            <Divider title="about" />
+            <Paragraph text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz."></Paragraph>
+            <Divider title="contact" />
+            <Social label="Email" link="mailto:madeleineolson@outlook.com" />
+            <Social
+              label="LinkedIn"
+              link="https://www.linkedin.com/in/madeleine-olson/"
+            />
+            <Social label="Github" link="https://github.com/madeleineolson" />
+            <Social label="Codepen" link="https://codepen.io/madeleine-olson" />
+          </ItemBig>
+        </Row>
       </Container>
     </div>
   );

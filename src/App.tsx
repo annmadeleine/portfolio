@@ -8,8 +8,7 @@ import Menu from "./components/components/menu/menu";
 import MenuItem from "./components/components/menuItem/menuItem";
 import Title from "./components/components/title/title";
 import { NameTitle } from "./components/components/name/name";
-import Image from "./components/components/image/image";
-import logo from "./images/test.png";
+import Logo from "./components/components/logo/logo";
 
 function App() {
   return (
@@ -32,7 +31,7 @@ const Home = () => (
       <MenuItem link="/" label="home"></MenuItem>
       <MenuItem link="/info" label="info"></MenuItem>
     </Menu>
-    <Image src={logo} alt="Test" />
+    <Logo />
     <Title labelUp="creative" labelDown="developer" />
     <NameTitle label="Ann Madeleine" />
   </div>

@@ -31,7 +31,7 @@ function Project() {
         <MenuItemDark link="/info" label="info"></MenuItemDark>
       </Menu>
       <Header src={img} alt="Test" />
-      <TitleProject label="This is a test for longer" />
+      <TitleProject label="This is a test for longer titles like this one" />
       <Container>
         <Column>
           <Divider title="The Challange" />

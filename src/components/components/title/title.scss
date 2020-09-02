@@ -15,7 +15,15 @@
   }
 
   &.small {
-    font-size: $typography-xl;
+    font-size: calc(#{$typography-lg} * 2);
+
+    @media (min-width: $breakpoint-sm) {
+      font-size: $typography-xl;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      font-size: $typography-xl;
+    }
   }
 
   &.light {
