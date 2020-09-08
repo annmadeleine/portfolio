@@ -5,7 +5,11 @@
 // Imports
 import React from "react";
 
-import Divider, { DividerProps, DividerNoBorder } from "./divider";
+import Divider, {
+  DividerProps,
+  DividerNoBorder,
+  ProjectDivider,
+} from "./divider";
 
 export default {
   component: Divider,
@@ -17,3 +21,6 @@ Default.args = { title: "the content" };
 
 export const NoBorder = (args: DividerProps) => <DividerNoBorder {...args} />;
 NoBorder.args = { title: "the content" };
+
+export const Project = (args: DividerProps) => <ProjectDivider {...args} />;
+Project.args = { title: "Explore" };

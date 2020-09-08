@@ -7,6 +7,10 @@
 .divider {
   display: flex;
 
+  &.max-width {
+    max-width: 200px;
+  }
+
   .border {
     flex-grow: 9;
     height: 1px;
@@ -14,7 +18,7 @@
     margin: $spacing-xs 0 0 0;
   }
 
-  .title {
+  .divider-title {
     color: $color-grey;
     font-family: $font-sansserif;
     font-size: $typography-sm;
@@ -23,8 +27,11 @@
     margin: 0 0 0 $spacing-md;
   }
 
-  .with-border {
-    flex-grow: none;
+  .project {
+    color: $color-grey;
+    font-family: $font-sansserif;
+    text-transform: capitalize;
+    font-size: $typography-sm;
   }
 
   .no-margin {

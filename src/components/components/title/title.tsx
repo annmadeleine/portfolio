@@ -34,9 +34,9 @@ export function TitleTransparent({ label }: TitleProps) {
 }
 
 export function TitleProject({ label }: TitleProps) {
-  return (
-    <div className="title dark layered project test">
-      <h1 className="title small">{label}</h1>
-    </div>
-  );
+  return <div className="title light project">{label}</div>;
+}
+
+export function TitleProjectDetail({ label }: TitleProps) {
+  return <div className="title project-detail">{label}</div>;
 }

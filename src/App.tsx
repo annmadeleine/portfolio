@@ -9,6 +9,13 @@ import MenuItem from "./components/components/menuItem/menuItem";
 import Title from "./components/components/title/title";
 import { NameTitle } from "./components/components/name/name";
 import Logo from "./components/components/logo/logo";
+import Container, {
+  ItemSmall,
+  ItemBig,
+  Row,
+} from "./components/components/container/container";
+import Work from "./components/components/work/work";
+import img from "./images/mockup-square.jpg";
 
 function App() {
   return (
@@ -29,11 +36,40 @@ const Home = () => (
     <Background />
     <Menu>
       <MenuItem link="/" label="home"></MenuItem>
+      <NameTitle label="Ann Madeleine" />
       <MenuItem link="/info" label="info"></MenuItem>
     </Menu>
-    <Logo />
-    <Title labelUp="creative" labelDown="developer" />
-    <NameTitle label="Ann Madeleine" />
+    <Container>
+      <Row>
+        <ItemSmall>
+          <Logo />
+        </ItemSmall>
+        <ItemBig>
+          <Title labelUp="creative" labelDown="developer" />
+        </ItemBig>
+      </Row>
+    </Container>
+
+    <Work
+      link="/project"
+      label="Branding"
+      client="Client"
+      year="2020"
+      src={img}
+      alt="Detta är en bild"
+      title="Explore"
+      hoverTitle=""
+    />
+    <Work
+      link="/project"
+      label="Title"
+      client="Wow"
+      year="2018"
+      src={img}
+      alt="Detta är en bild"
+      title="Explore"
+      hoverTitle=""
+    />
   </div>
 );
 

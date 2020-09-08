@@ -8,6 +8,7 @@ import Paragraph, {
   ParagraphProps,
   ParagraphRight,
   ParagraphSmall,
+  ParagraphRotated,
 } from "./paragraph";
 
 export default {
@@ -30,4 +31,10 @@ Right.args = {
 export const Small = (args: ParagraphProps) => <ParagraphSmall {...args} />;
 Small.args = {
   text: "The quick, brown fox.",
+};
+
+export const Rotated = (args: ParagraphProps) => <ParagraphRotated {...args} />;
+Rotated.args = {
+  client: "Client",
+  year: "2020",
 };

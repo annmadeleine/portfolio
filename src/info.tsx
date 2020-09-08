@@ -6,9 +6,9 @@ import { BackgroundDark } from "./components/components/background/background";
 import Name from "./components/components/name/name";
 import Paragraph from "./components/components/paragraph/paragraph";
 import Container, {
-  ItemBig,
-  ItemSmall,
+  ItemProjectDetailSmall,
   Row,
+  ItemSmallCollapse,
 } from "./components/components/container/container";
 import Divider from "./components/components/divider/divider";
 import Social from "./components/components/link/social";
@@ -24,11 +24,11 @@ function Info() {
         <MenuItemDark link="/info" label="info"></MenuItemDark>
       </Menu>
       <Container>
-        <ItemSmall>
-          <LogoWhite />
-        </ItemSmall>
         <Row>
-          <ItemBig>
+          <ItemSmallCollapse>
+            <LogoWhite />
+          </ItemSmallCollapse>
+          <ItemProjectDetailSmall>
             <Divider title="about" />
             <Paragraph text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz."></Paragraph>
             <Divider title="contact" />
@@ -39,7 +39,7 @@ function Info() {
             />
             <Social label="Github" link="https://github.com/madeleineolson" />
             <Social label="Codepen" link="https://codepen.io/madeleine-olson" />
-          </ItemBig>
+          </ItemProjectDetailSmall>
         </Row>
       </Container>
     </div>

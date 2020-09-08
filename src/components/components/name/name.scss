@@ -6,16 +6,16 @@
 
 .name {
   font-family: $font-sansserif;
-  font-size: $typography-lg;
+  font-size: $typography-md;
   text-align: center;
   text-transform: uppercase;
   font-weight: 100;
 
   &.light {
-    position: absolute;
-    top: 70%;
-    left: 40%;
     color: $color-black;
+    font-size: $typography-md;
+    margin: 0;
+    opacity: $opacity-md;
   }
 
   &.dark {

@@ -15,7 +15,7 @@
   }
 
   &.small {
-    font-size: calc(#{$typography-lg} * 2);
+    font-size: 2em;
 
     @media (min-width: $breakpoint-sm) {
       font-size: $typography-xl;
@@ -27,7 +27,7 @@
   }
 
   &.light {
-    color: $color-grey;
+    color: $color-black;
   }
 
   &.dark {
@@ -58,9 +58,26 @@
 
   &.project {
     position: absolute;
+    z-index: 2;
+    font-size: $typography-xxl;
+    color: transparent;
     left: 50%;
-    top: 460px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 100%);
+    -webkit-text-stroke: 1px $color-black;
+
+    @media (min-width: $breakpoint-lg) {
+      left: 50%;
+      margin: $spacing-md 0;
+      transform: translate(0%, 0%);
+    }
+  }
+
+  &.project-detail {
+    z-index: 2;
+    font-size: $typography-xxl;
+    color: transparent;
+    -webkit-text-stroke: 1px $color-white;
+    overflow: hidden;
   }
 
   &.center {

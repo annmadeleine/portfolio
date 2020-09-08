@@ -17,8 +17,8 @@ import Container, {
   ItemSmall,
   Row,
 } from "./components/components/container/container";
-import Image, { Header } from "./components/components/image/image";
-import { TitleProject } from "./components/components/title/title";
+import Image, { HeaderImage } from "./components/components/image/image";
+import { TitleProjectDetail } from "./components/components/title/title";
 import img from "./images/mockup.jpg";
 
 function Project() {
@@ -30,8 +30,8 @@ function Project() {
         <Name label="Ann Madeleine" />
         <MenuItemDark link="/info" label="info"></MenuItemDark>
       </Menu>
-      <Header src={img} alt="Test" />
-      <TitleProject label="This is a test for longer titles like this one" />
+      <HeaderImage src={img} alt="Test" />
+      <TitleProjectDetail label="Branding" />
       <Container>
         <Column>
           <Divider title="The Challange" />

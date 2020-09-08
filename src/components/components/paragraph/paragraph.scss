@@ -4,6 +4,10 @@
 
 @import "../../../styles/variables";
 
+.paragraph-rotated {
+  position: relative;
+}
+
 .paragraph {
   color: $color-white;
   font-family: $font-sansserif;
@@ -15,9 +19,21 @@
 
   &.right {
     text-align: right;
+    margin: $spacing-md 0 $spacing-xl $spacing-xl;
   }
 
   &.small {
     margin: $spacing-md 0 $spacing-md 0;
+  }
+
+  &.dark {
+    color: $color-black;
+  }
+
+  &.rotate {
+    display: flex;
+    justify-content: flex-end;
+    font-size: $typography-sm;
+    margin: 0;
   }
 }

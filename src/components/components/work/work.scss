@@ -1,0 +1,13 @@
+//
+// Styling for work
+//
+
+@import "../../../styles/variables";
+
+.work {
+  margin: $spacing-xxl 0 calc(#{$spacing-xxl} * 2) 0;
+
+  &:last-child {
+    margin: 0 0 $spacing-xxl 0;
+  }
+}
