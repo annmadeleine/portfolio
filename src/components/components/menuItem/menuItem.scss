@@ -11,6 +11,7 @@
   letter-spacing: $spacing-xxs;
   text-transform: uppercase;
   color: $color-black;
+  cursor: none;
 
   &.dark {
     color: $color-white;
@@ -32,7 +33,7 @@
     background-color: $color-black;
     transform: scaleX(0);
     transform-origin: left center;
-    transition: all $time-xs $cubic-bezier;
+    transition: all $time-sm $cubic-bezier;
   }
 
   &:hover {

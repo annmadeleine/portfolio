@@ -1,0 +1,26 @@
+//
+// Styling for icon
+//
+
+@import "../../../styles/variables";
+
+.icon {
+  &.arrow-down {
+    position: relative;
+    width: $typography-md;
+    height: $typography-md;
+    left: 50%;
+    animation: bounce 2s ease both infinite;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-120px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+}

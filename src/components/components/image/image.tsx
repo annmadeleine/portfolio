@@ -4,6 +4,7 @@ import "./image.scss";
 export interface ImageProps {
   src: string;
   alt: string;
+  showHoverEffect?: boolean;
 }
 
 export default function Image({ src, alt }: ImageProps) {
@@ -14,6 +15,12 @@ export function HeaderImage({ src, alt }: ImageProps) {
   return <img src={src} alt={alt} className="image header" />;
 }
 
-export function ProjectImage({ src, alt }: ImageProps) {
-  return <img src={src} alt={alt} className="image project" />;
+export function ProjectImage({ src, alt, showHoverEffect }: ImageProps) {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={showHoverEffect ? "hover image project" : "image project"}
+    />
+  );
 }

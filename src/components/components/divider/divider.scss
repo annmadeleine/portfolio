@@ -16,6 +16,11 @@
     height: 1px;
     background: $color-grey;
     margin: $spacing-xs 0 0 0;
+    transition: all ease $time-sm;
+
+    &.hover {
+      margin: $spacing-xs 0 0 $spacing-lg;
+    }
   }
 
   .divider-title {
@@ -32,6 +37,26 @@
     font-family: $font-sansserif;
     text-transform: capitalize;
     font-size: $typography-sm;
+    display: inline-block;
+    transition: transform 500ms;
+
+    span {
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+    }
+
+    &:after {
+      content: attr(data-hover);
+      position: absolute;
+      top: -30px;
+      left: 0;
+      transform: translate3d(0, 0, 0);
+    }
+
+    &:hover {
+      transform: translateY(30px);
+    }
   }
 
   .no-margin {

@@ -1,0 +1,38 @@
+//
+// Styling for link
+//
+
+@import "../../../styles/variables";
+
+a {
+  text-decoration: none;
+  color: $color-white;
+  font-family: $font-sansserif;
+  font-size: $typography-md;
+  text-transform: capitalize;
+  cursor: none;
+}
+
+.link {
+  margin: $spacing-md 0 0 0;
+  overflow: hidden;
+
+  span {
+    position: relative;
+    display: inline-block;
+    transition: transform $time-sm;
+
+    &:before {
+      position: absolute;
+      white-space: nowrap;
+      top: 100%;
+      content: attr(data-hover);
+      font-weight: 500;
+    }
+
+    &:hover,
+    &:focus {
+      transform: translateY(-100%);
+    }
+  }
+}

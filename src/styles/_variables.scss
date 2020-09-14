@@ -24,7 +24,8 @@ $spacing-xxl: 8em;
 
 // Measurements
 
-$time-xs: 0.6s;
+$time-xs: 150ms;
+$time-sm: 0.6s;
 
 // Opacity
 
@@ -67,7 +68,8 @@ $typography-bold: 700;
 
 // prettier-ignore
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=LibreCaslonDisplay&display=swap);
+// prettier-ignore
+@import url(https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap);
 
 $font-sansserif: "Montserrat", sans-serif;
 $font-serif: "Libre Caslon Display", serif;

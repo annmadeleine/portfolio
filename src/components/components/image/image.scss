@@ -22,5 +22,10 @@
     height: 100%;
     object-fit: cover;
     filter: opacity($opacity-md);
+    transition: all ease $time-sm;
+  }
+
+  &.hover {
+    filter: opacity($opacity-sm);
   }
 }

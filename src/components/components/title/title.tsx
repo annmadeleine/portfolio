@@ -5,6 +5,7 @@ export interface TitleProps {
   labelUp?: string;
   labelDown?: string;
   label?: string;
+  showHoverEffect?: boolean;
 }
 
 export default function Title({ labelUp, labelDown }: TitleProps) {
@@ -33,8 +34,16 @@ export function TitleTransparent({ label }: TitleProps) {
   );
 }
 
-export function TitleProject({ label }: TitleProps) {
-  return <div className="title light project">{label}</div>;
+export function TitleProject({ label, showHoverEffect }: TitleProps) {
+  return (
+    <div
+      className={
+        showHoverEffect ? "hover title light project" : "title light project"
+      }
+    >
+      {label}
+    </div>
+  );
 }
 
 export function TitleProjectDetail({ label }: TitleProps) {

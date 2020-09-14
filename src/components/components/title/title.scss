@@ -64,11 +64,15 @@
     left: 50%;
     transform: translate(-50%, 100%);
     -webkit-text-stroke: 1px $color-black;
+    transition: all ease $time-sm;
 
     @media (min-width: $breakpoint-lg) {
       left: 50%;
       margin: $spacing-md 0;
       transform: translate(0%, 0%);
+      &.hover {
+        transform: scale(1.1);
+      }
     }
   }
 

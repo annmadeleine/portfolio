@@ -16,6 +16,7 @@
   letter-spacing: $spacing-xxs;
   line-height: 1.5;
   margin: $spacing-md 0 $spacing-xl 0;
+  transition: all ease $time-sm;
 
   &.right {
     text-align: right;
@@ -28,6 +29,10 @@
 
   &.dark {
     color: $color-black;
+  }
+
+  &.light {
+    color: $color-grey;
   }
 
   &.rotate {

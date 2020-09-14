@@ -4,6 +4,7 @@ import "./divider.scss";
 export interface DividerProps {
   title: string;
   hoverTitle?: string;
+  showHoverEffect?: boolean;
 }
 
 export default function Divider({ title }: DividerProps) {
@@ -23,12 +24,22 @@ export function DividerNoBorder({ title }: DividerProps) {
   );
 }
 
-export function ProjectDivider({ title, hoverTitle }: DividerProps) {
+export function ProjectDivider({
+  title,
+  hoverTitle,
+  showHoverEffect,
+}: DividerProps) {
   return (
     <div className="divider max-width">
-      <div className="border"></div>
-      <div className="divider-title project" data-hover={hoverTitle}>
-        {title}
+      <div className={showHoverEffect ? "hover border" : "border"}></div>
+      <div
+        className={
+          showHoverEffect
+            ? "hover after divider-title project"
+            : "divider-title project"
+        }
+      >
+        <span data-hover={hoverTitle}>{title}</span>
       </div>
     </div>
   );

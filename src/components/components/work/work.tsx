@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./work.scss";
 
 import { ParagraphRotated } from "../paragraph/paragraph";
@@ -21,6 +21,7 @@ export interface WorkProps {
   title: string;
   label: string;
   hoverTitle: string;
+  id?: string;
 }
 
 export default function Work({
@@ -32,20 +33,34 @@ export default function Work({
   title,
   label,
   hoverTitle,
+  id,
 }: WorkProps) {
+  const [isHovering, setIsHovering] = useState(false);
   return (
-    <a href={link}>
-      <div className="work">
+    <a href={link} id={id}>
+      <div
+        className="work"
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
         <ProjectContainer>
-          <TitleProject label={label} />
+          <TitleProject label={label} showHoverEffect={isHovering} />
           <ProjectItemLeft>
-            <ParagraphRotated client={client} year={year} />
+            <ParagraphRotated
+              client={client}
+              year={year}
+              showHoverEffect={isHovering}
+            />
           </ProjectItemLeft>
           <ProjectItem>
-            <ProjectImage alt={alt} src={src} />
+            <ProjectImage alt={alt} src={src} showHoverEffect={isHovering} />
           </ProjectItem>
           <ProjectItemRight>
-            <ProjectDivider title={title} hoverTitle={hoverTitle} />
+            <ProjectDivider
+              title={title}
+              hoverTitle={hoverTitle}
+              showHoverEffect={isHovering}
+            />
           </ProjectItemRight>
         </ProjectContainer>
       </div>

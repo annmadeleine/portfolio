@@ -23,4 +23,4 @@ export const NoBorder = (args: DividerProps) => <DividerNoBorder {...args} />;
 NoBorder.args = { title: "the content" };
 
 export const Project = (args: DividerProps) => <ProjectDivider {...args} />;
-Project.args = { title: "Explore" };
+Project.args = { title: "01", hoverTitle: "Explore" };
