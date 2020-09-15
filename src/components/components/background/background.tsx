@@ -12,5 +12,5 @@ export default function Background() {
 }
 
 export function BackgroundDark() {
-  return <div className="background dark"></div>;
+  return <div className="background background--dark"></div>;
 }

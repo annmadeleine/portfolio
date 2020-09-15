@@ -12,14 +12,14 @@
   object-fit: cover;
   margin: $spacing-md 0;
 
-  &.header {
+  &__header {
     width: 100%;
     height: 400px;
     margin: 0;
     filter: brightness(80%);
   }
 
-  &.project {
+  &__work {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -27,7 +27,7 @@
     transition: all ease $time-sm;
   }
 
-  &.hover {
+  &__hover {
     filter: opacity($opacity-sm);
   }
 }

@@ -1,12 +1,11 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-import Menu from "./components/components/menu/menu";
-import { MenuItemDark } from "./components/components/menuItem/menuItem";
+import Menu, { MenuItemDark } from "./components/components/menu/menu";
 import { BackgroundDark } from "./components/components/background/background";
 import Name from "./components/components/name/name";
 import Container, {
-  ItemProjectDetailSmall,
+  ItemWorkDetailSmall,
   Row,
   ItemSmallCollapse,
 } from "./components/components/container/container";
@@ -39,7 +38,7 @@ function Info() {
           <ItemSmallCollapse>
             <LogoWhite />
           </ItemSmallCollapse>
-          <ItemProjectDetailSmall>
+          <ItemWorkDetailSmall>
             <Fade bottom>
               <Section
                 title="about"
@@ -47,7 +46,7 @@ function Info() {
               />
               <SectionSocial title="contact" socials={socials} />
             </Fade>
-          </ItemProjectDetailSmall>
+          </ItemWorkDetailSmall>
         </Row>
       </Container>
     </div>

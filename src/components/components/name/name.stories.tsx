@@ -4,7 +4,7 @@
 
 // Imports
 import React from "react";
-import Name, { NameProps, NameTitle } from "./name";
+import Name, { NameProps, NameLight } from "./name";
 
 // Story
 export default {
@@ -16,5 +16,5 @@ export default {
 export const Default = (args: NameProps) => <Name {...args} />;
 Default.args = { label: "Ann Madeleine" };
 
-export const Title = (args: NameProps) => <NameTitle {...args} />;
+export const Light = (args: NameProps) => <NameLight {...args} />;
 Default.args = { label: "Ann Madeleine" };

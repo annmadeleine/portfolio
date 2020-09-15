@@ -5,14 +5,14 @@
 // Imports
 import React, { useState } from "react";
 import "./work.scss";
-import { ParagraphRotated } from "../paragraph/paragraph";
-import { ProjectImage } from "../image/image";
-import { ProjectDivider } from "../divider/divider";
+import { ParagraphWork } from "../paragraph/paragraph";
+import { ImageWork } from "../image/image";
+import { DividerWork } from "../divider/divider";
 import {
-  ProjectContainer,
-  ProjectItem,
-  ProjectItemRight,
-  ProjectItemLeft,
+  ContainerWork,
+  ItemWork,
+  ItemWorkRight,
+  ItemWorkLeft,
 } from "../container/container";
 import { TitleProject } from "../title/title";
 
@@ -49,26 +49,22 @@ export default function Work({
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >
-        <ProjectContainer>
+        <ContainerWork>
           <TitleProject label={label} showHoverEffect={isHovering} />
-          <ProjectItemLeft>
-            <ParagraphRotated
+          <ItemWorkLeft>
+            <ParagraphWork
               client={client}
               year={year}
               showHoverEffect={isHovering}
             />
-          </ProjectItemLeft>
-          <ProjectItem>
-            <ProjectImage alt={alt} src={src} showHoverEffect={isHovering} />
-          </ProjectItem>
-          <ProjectItemRight>
-            <ProjectDivider
-              title={title}
-              hoverTitle={hoverTitle}
-              showHoverEffect={isHovering}
-            />
-          </ProjectItemRight>
-        </ProjectContainer>
+          </ItemWorkLeft>
+          <ItemWork>
+            <ImageWork alt={alt} src={src} showHoverEffect={isHovering} />
+          </ItemWork>
+          <ItemWorkRight>
+            <DividerWork title={title} showHoverEffect={isHovering} />
+          </ItemWorkRight>
+        </ContainerWork>
       </div>
     </a>
   );

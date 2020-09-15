@@ -13,14 +13,14 @@
   text-transform: uppercase;
   font-weight: 100;
 
-  &.light {
+  &--light {
     color: $color-black;
     font-size: $typography-md;
     margin: 0;
     opacity: $opacity-md;
   }
 
-  &.dark {
+  &--dark {
     color: $color-white;
     font-size: $typography-md;
     margin: 0;

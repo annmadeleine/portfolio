@@ -17,26 +17,9 @@ export interface TitleProps {
 // Title versions
 export default function Title({ labelUp, labelDown }: TitleProps) {
   return (
-    <div className="title small light center">
+    <div className="title title__center title__small title--light">
       <h1 className="title title__up">{labelUp}</h1>
       <h1 className="title title__down">{labelDown}</h1>
-    </div>
-  );
-}
-
-export function TitleDark({ labelUp, labelDown }: TitleProps) {
-  return (
-    <div className="title dark rotate small transparent">
-      <h1 className="title title__up">{labelUp}</h1>
-      <h1 className="title title__down">{labelDown}</h1>
-    </div>
-  );
-}
-
-export function TitleTransparent({ label }: TitleProps) {
-  return (
-    <div className="title transparent small dark">
-      <h1 className="title">{label}</h1>
     </div>
   );
 }
@@ -45,7 +28,9 @@ export function TitleProject({ label, showHoverEffect }: TitleProps) {
   return (
     <div
       className={
-        showHoverEffect ? "hover title light project" : "title light project"
+        showHoverEffect
+          ? "title title__light title__project title__hover"
+          : "title title__light title__project"
       }
     >
       {label}
@@ -54,5 +39,5 @@ export function TitleProject({ label, showHoverEffect }: TitleProps) {
 }
 
 export function TitleProjectDetail({ label }: TitleProps) {
-  return <div className="title project-detail">{label}</div>;
+  return <div className="title title__project-detail">{label}</div>;
 }

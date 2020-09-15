@@ -1,8 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-import Menu from "./components/components/menu/menu";
-import { MenuItemDark } from "./components/components/menuItem/menuItem";
+import Menu, { MenuItemDark } from "./components/components/menu/menu";
 import Name from "./components/components/name/name";
 import { BackgroundDark } from "./components/components/background/background";
 import Divider, {
@@ -18,7 +17,7 @@ import Container, {
   ItemSmall,
   Row,
 } from "./components/components/container/container";
-import Image, { HeaderImage } from "./components/components/image/image";
+import Image, { ImageHeader } from "./components/components/image/image";
 import { TitleProjectDetail } from "./components/components/title/title";
 import img from "./images/mockup.jpg";
 import Section from "./components/components/section/section";
@@ -32,7 +31,7 @@ function Project() {
         <Name link="/" label="Ann Madeleine" />
         <MenuItemDark link="/info" label="info"></MenuItemDark>
       </Menu>
-      <HeaderImage src={img} alt="Test" />
+      <ImageHeader src={img} alt="Test" />
       <TitleProjectDetail label="Branding" />
       <Container>
         <Column>

@@ -6,7 +6,7 @@
 @import "../../../styles/variables";
 
 // Styling
-.paragraph-rotated {
+.paragraph__work {
   position: relative;
 }
 
@@ -20,24 +20,24 @@
   margin: $spacing-md 0 $spacing-xl 0;
   transition: all ease $time-sm;
 
-  &.right {
+  &__right {
     text-align: right;
     margin: $spacing-md 0 $spacing-xl $spacing-xl;
   }
 
-  &.small {
+  &__small {
     margin: $spacing-md 0 $spacing-md 0;
   }
 
-  &.dark {
+  &--dark {
     color: $color-black;
   }
 
-  &.light {
+  &--light {
     color: $color-grey;
   }
 
-  &.rotate {
+  &__workItem {
     display: flex;
     justify-content: flex-end;
     font-size: $typography-sm;

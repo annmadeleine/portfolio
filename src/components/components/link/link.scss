@@ -6,18 +6,21 @@
 @import "../../../styles/variables";
 
 // Styling
+
 a {
   text-decoration: none;
-  color: $color-white;
-  font-family: $font-sansserif;
-  font-size: $typography-md;
-  text-transform: capitalize;
-  cursor: none;
 }
 
 .link {
   margin: $spacing-md 0 0 0;
   overflow: hidden;
+
+  a {
+    color: $color-white;
+    font-family: $font-sansserif;
+    font-size: $typography-md;
+    text-transform: capitalize;
+  }
 
   span {
     position: relative;

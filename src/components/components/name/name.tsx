@@ -17,15 +17,15 @@ export interface NameProps {
 export default function Name({ label, link }: NameProps) {
   return (
     <Link to={link}>
-      <h2 className="name dark">{label}</h2>
+      <h2 className="name name--dark">{label}</h2>
     </Link>
   );
 }
 
-export function NameTitle({ label, link }: NameProps) {
+export function NameLight({ label, link }: NameProps) {
   return (
     <Link to={link}>
-      <h2 className="name light">{label}</h2>
+      <h2 className="name name--light">{label}</h2>
     </Link>
   );
 }

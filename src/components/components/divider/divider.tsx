@@ -9,7 +9,6 @@ import "./divider.scss";
 // Props
 export interface DividerProps {
   title: string;
-  hoverTitle?: string;
   showHoverEffect?: boolean;
 }
 
@@ -17,8 +16,8 @@ export interface DividerProps {
 export default function Divider({ title }: DividerProps) {
   return (
     <div className="divider">
-      <div className="border"></div>
-      <div className="divider-title">{title}</div>
+      <div className="divider__border"></div>
+      <div className="divider__title">{title}</div>
     </div>
   );
 }
@@ -26,27 +25,23 @@ export default function Divider({ title }: DividerProps) {
 export function DividerNoBorder({ title }: DividerProps) {
   return (
     <div className="divider">
-      <div className="divider-title no-margin">{title}</div>
+      <div className="divider__title divider__title__no-margin">{title}</div>
     </div>
   );
 }
 
-export function ProjectDivider({
-  title,
-  hoverTitle,
-  showHoverEffect,
-}: DividerProps) {
+export function DividerWork({ title, showHoverEffect }: DividerProps) {
   return (
-    <div className="divider max-width">
-      <div className={showHoverEffect ? "hover border" : "border"}></div>
+    <div className="divider divider__max-width">
       <div
         className={
           showHoverEffect
-            ? "hover after divider-title project"
-            : "divider-title project"
+            ? "divider__border divider__border__hover"
+            : "divider__border"
         }
-      >
-        <span data-hover={hoverTitle}>{title}</span>
+      ></div>
+      <div className="divider__title divider__work">
+        <span>{title}</span>
       </div>
     </div>
   );

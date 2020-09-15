@@ -5,10 +5,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import * as Reveal from "react-reveal/Fade";
 
 import Background from "./components/components/background/background";
-import Menu from "./components/components/menu/menu";
-import MenuItem from "./components/components/menuItem/menuItem";
+import Menu, { MenuItem } from "./components/components/menu/menu";
 import Title from "./components/components/title/title";
-import { NameTitle } from "./components/components/name/name";
+import { NameLight } from "./components/components/name/name";
 import Logo from "./components/components/logo/logo";
 import Container, {
   ItemSmall,
@@ -17,8 +16,7 @@ import Container, {
 } from "./components/components/container/container";
 import Work from "./components/components/work/work";
 import img from "./images/mockup-square.jpg";
-import Icon from "./components/components/icon/icon";
-import { Cursor } from "./components/components/cursor/cursor";
+import IconArrowDown from "./components/components/icon/icon";
 
 export default function App() {
   return (
@@ -29,7 +27,6 @@ export default function App() {
           <Route path="/info" component={Info} />
           <Route path="/project" component={Project} />
         </Switch>
-        <Cursor />
       </div>
     </Router>
   );
@@ -40,7 +37,7 @@ const Home = () => (
     <Background />
     <Menu>
       <MenuItem link="/#work" label="work"></MenuItem>
-      <NameTitle link="/" label="Ann Madeleine" />
+      <NameLight link="/" label="Ann Madeleine" />
       <MenuItem link="/info" label="info"></MenuItem>
     </Menu>
     <Container>
@@ -53,7 +50,7 @@ const Home = () => (
         </ItemBig>
       </Row>
     </Container>
-    <Icon />
+    <IconArrowDown />
     <Reveal bottom>
       <Work
         id="work"

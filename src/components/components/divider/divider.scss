@@ -9,32 +9,36 @@
 .divider {
   display: flex;
 
-  &.max-width {
+  &__max-width {
     max-width: 200px;
   }
 
-  .border {
+  &__border {
     flex-grow: 9;
     height: 1px;
     background: $color-grey;
     margin: $spacing-xs 0 0 0;
     transition: all ease $time-sm;
 
-    &.hover {
+    &__hover {
       margin: $spacing-xs 0 0 $spacing-lg;
     }
   }
 
-  .divider-title {
+  &__title {
     color: $color-grey;
     font-family: $font-sansserif;
     font-size: $typography-sm;
     text-transform: uppercase;
     font-weight: normal;
     margin: 0 0 0 $spacing-md;
+
+    &__no-margin {
+      margin: $spacing-md 0 0 0;
+    }
   }
 
-  .project {
+  &__work {
     color: $color-grey;
     font-family: $font-sansserif;
     text-transform: capitalize;
@@ -47,21 +51,5 @@
       position: relative;
       overflow: hidden;
     }
-
-    &:after {
-      content: attr(data-hover);
-      position: absolute;
-      top: -30px;
-      left: 0;
-      transform: translate3d(0, 0, 0);
-    }
-
-    &:hover {
-      transform: translateY(30px);
-    }
-  }
-
-  .no-margin {
-    margin: $spacing-md 0 0 0;
   }
 }

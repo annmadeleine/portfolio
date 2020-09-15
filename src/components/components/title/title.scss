@@ -12,11 +12,26 @@
   text-transform: capitalize;
   font-weight: normal;
 
-  &.big {
+  &__center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__up {
+    margin: 0 $spacing-lg 0 0;
+  }
+
+  &__down {
+    margin: -$spacing-xs 0 0 0;
+  }
+
+  &__big {
     font-size: $typography-xxl;
   }
 
-  &.small {
+  &__small {
     font-size: 2em;
 
     @media (min-width: $breakpoint-sm) {
@@ -28,37 +43,15 @@
     }
   }
 
-  &.light {
+  &--light {
     color: $color-black;
   }
 
-  &.dark {
+  &--dark {
     color: $color-white;
   }
 
-  &.rotate {
-    transform: rotate(-90deg);
-    position: absolute;
-    top: 25%;
-    left: -10%;
-  }
-
-  &.transparent {
-    opacity: $opacity-xl;
-  }
-
-  &.layered {
-    display: flex;
-    position: relative;
-  }
-
-  &.number {
-    position: absolute;
-    left: 90%;
-    top: 15%;
-  }
-
-  &.project {
+  &__project {
     position: absolute;
     z-index: 2;
     font-size: $typography-xxl;
@@ -72,32 +65,17 @@
       left: 50%;
       margin: $spacing-md 0;
       transform: translate(0%, 0%);
-      &.hover {
+      &__hover {
         transform: scale(1.1);
       }
     }
   }
 
-  &.project-detail {
+  &__project-detail {
     z-index: 2;
     font-size: $typography-xxl;
     color: transparent;
     -webkit-text-stroke: 1px $color-white;
     overflow: hidden;
-  }
-
-  &.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &__up {
-    margin: 0 $spacing-lg 0 0;
-  }
-
-  &__down {
-    margin: -$spacing-xs 0 0 0;
   }
 }

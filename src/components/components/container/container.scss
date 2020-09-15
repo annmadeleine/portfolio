@@ -19,15 +19,48 @@
     margin: $spacing-lg $spacing-xxl $spacing-md $spacing-xxl;
   }
 
-  &.no-margin {
+  &__no-margin {
     margin: 0;
   }
 
-  .item {
-    width: 10%;
+  &__row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
 
-  .small {
+  &__column {
+    width: 100%;
+
+    @media (min-width: $breakpoint-sm) {
+      width: 60%;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      width: 50%;
+    }
+  }
+
+  &__work {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-sm) {
+      flex-direction: column;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      flex-direction: row;
+    }
+  }
+}
+
+.item {
+  width: 10%;
+
+  &__small {
     position: relative;
     flex-grow: 1;
 
@@ -38,112 +71,79 @@
     @media (min-width: $breakpoint-lg) {
       position: relative;
     }
-
-    &.project-detail {
-      top: 10%;
-
-      @media (min-width: $breakpoint-sm) {
-        position: relative;
-        top: 10%;
-      }
-
-      @media (min-width: $breakpoint-lg) {
-        position: relative;
-        top: 10%;
-      }
-    }
-
-    &.collapse {
-      position: absolute;
-      opacity: $opacity-xl;
-
-      @media (min-width: $breakpoint-sm) {
-        position: relative;
-        top: 0%;
-        opacity: $opacity-md;
-      }
-
-      @media (min-width: $breakpoint-lg) {
-        position: relative;
-        top: 0%;
-        opacity: 1;
-      }
-    }
   }
 
-  .big {
-    flex-grow: 20;
-  }
-
-  .medium {
+  &__medium {
     flex-grow: 2;
     align-self: flex-end;
     margin: $spacing-xxl $spacing-md;
   }
-}
 
-.row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.column {
-  width: 100%;
-
-  @media (min-width: $breakpoint-sm) {
-    width: 60%;
+  &__big {
+    flex-grow: 20;
   }
 
-  @media (min-width: $breakpoint-lg) {
-    width: 50%;
-  }
-}
-
-.project-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-
-  @media (min-width: $breakpoint-sm) {
-    flex-direction: column;
-  }
-
-  @media (min-width: $breakpoint-lg) {
-    flex-direction: row;
-  }
-}
-
-.project-item {
-  flex: 1 1 0;
-
-  &.right {
-    margin: 0;
-
-    @media (min-width: $breakpoint-sm) {
-      margin: 0;
-    }
-
-    @media (min-width: $breakpoint-lg) {
-      margin: $spacing-md $spacing-xxl 0 $spacing-xl;
-      align-self: flex-end;
-    }
-  }
-
-  &.left {
-    position: relative;
-    display: block;
-    margin: 0;
+  &__collapse {
+    position: absolute;
+    opacity: $opacity-xl;
 
     @media (min-width: $breakpoint-sm) {
       position: relative;
-      display: block;
-      margin: 0;
+      top: 0%;
+      opacity: $opacity-md;
     }
 
     @media (min-width: $breakpoint-lg) {
-      margin: $spacing-md;
+      position: relative;
+      top: 0%;
+      opacity: 1;
+    }
+  }
+
+  &__work {
+    flex: 1 1 0;
+
+    &__right {
+      margin: 0;
+
+      @media (min-width: $breakpoint-sm) {
+        margin: 0;
+      }
+
+      @media (min-width: $breakpoint-lg) {
+        margin: $spacing-md $spacing-xxl 0 $spacing-xl;
+        align-self: flex-end;
+      }
+    }
+
+    &__left {
+      position: relative;
+      display: block;
+      margin: 0;
+
+      @media (min-width: $breakpoint-sm) {
+        position: relative;
+        display: block;
+        margin: 0;
+      }
+
+      @media (min-width: $breakpoint-lg) {
+        margin: $spacing-md;
+      }
+    }
+  }
+
+  &__work-detail {
+    top: 10%;
+
+    @media (min-width: $breakpoint-sm) {
+      position: relative;
+      top: 10%;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      position: relative;
+      top: 10%;
     }
   }
 }
