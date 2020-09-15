@@ -1,5 +1,5 @@
 //
-// Font variables converted into ts for Storybook.
+// Typography variables converted into ts for Storybook.
 //
 
 export const typographySizes = [

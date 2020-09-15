@@ -1,16 +1,18 @@
 //
-// Work component
+// Work story
 //
 
 // Imports
 import React from "react";
 import Work, { WorkProps } from "./work";
 
+// Story
 export default {
   component: Work,
   title: "Components/Work",
 };
 
+// Story versions
 export const Default = (args: WorkProps) => <Work {...args} />;
 Default.args = {
   client: "Client",

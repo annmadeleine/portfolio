@@ -1,5 +1,5 @@
 //
-// Paragraph component
+// Paragraph story
 //
 
 // Imports
@@ -11,11 +11,13 @@ import Paragraph, {
   ParagraphRotated,
 } from "./paragraph";
 
+// Story
 export default {
   component: Paragraph,
   title: "Components/Paragraph",
 };
 
+// Story versions
 export const Default = (args: ParagraphProps) => <Paragraph {...args} />;
 Default.args = {
   text:

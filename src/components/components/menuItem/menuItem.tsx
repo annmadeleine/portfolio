@@ -1,12 +1,19 @@
+//
+// MenuItem component
+//
+
+// Imports
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./menuItem.scss";
 
+// Props
 export interface MenuItemProps {
   label: string;
   link: string;
 }
 
+// MenuItem versions
 export default function MenuItem({ label, link }: MenuItemProps) {
   return (
     <Link to={link}>

@@ -1,10 +1,17 @@
+//
+// Container component
+//
+
+// Imports
 import React from "react";
 import "./container.scss";
 
+// Props
 export interface ContainerProps {
   children: React.ReactNode;
 }
 
+// Container versions
 export default function Container({ children }: ContainerProps) {
   return <div className="container">{children}</div>;
 }

@@ -1,7 +1,13 @@
+//
+// Cursor component
+//
+
+// Imports
 import React, { useState, useEffect } from "react";
 import classNames from "classnames";
 import "./cursor.scss";
 
+// Cursor version
 export const Cursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [clicked, setClicked] = useState(false);

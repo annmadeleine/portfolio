@@ -1,6 +1,12 @@
+//
+// Icon component
+//
+
+// Imports
 import React from "react";
 import "./icon.scss";
 
+// Icon versions
 export default function Icon() {
   return (
     <div className="icon arrow-down">

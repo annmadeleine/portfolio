@@ -1,6 +1,12 @@
+//
+// Title component
+//
+
+// Imports
 import React from "react";
 import "./title.scss";
 
+// Props
 export interface TitleProps {
   labelUp?: string;
   labelDown?: string;
@@ -8,6 +14,7 @@ export interface TitleProps {
   showHoverEffect?: boolean;
 }
 
+// Title versions
 export default function Title({ labelUp, labelDown }: TitleProps) {
   return (
     <div className="title small light center">

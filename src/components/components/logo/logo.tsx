@@ -1,6 +1,12 @@
+//
+// Container component
+//
+
+// Imports
 import React from "react";
 import "./logo.scss";
 
+// Logo versions
 export default function Logo() {
   return (
     <svg

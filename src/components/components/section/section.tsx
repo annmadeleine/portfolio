@@ -1,9 +1,14 @@
+//
+// Section component
+//
+
+// Imports
 import React from "react";
-import "./section.scss";
 import Divider from "../divider/divider";
 import Paragraph from "../paragraph/paragraph";
 import Link from "../link/link";
 
+// Props
 export interface SectionProps {
   title: string;
   text: string;
@@ -14,11 +19,7 @@ export interface SectionSocialProps {
   socials: Array<{ label: string; link: string }>;
 }
 
-export interface SectionAnimatedProps {
-  children: React.ReactNode;
-  unicorn: string;
-}
-
+// Section versions
 export default function Section({ title, text }: SectionProps) {
   return (
     <div className="section">

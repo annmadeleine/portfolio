@@ -1,6 +1,6 @@
 //
 // Menu component
-// Needs to be fixed
+//
 
 // Imports
 import React from "react";
@@ -8,11 +8,13 @@ import { MemoryRouter } from "react-router";
 import Menu, { MenuProps } from "./menu";
 import MenuItem, { MenuItemProps } from "../menuItem/menuItem";
 
+// Story
 export default {
   component: Menu,
   title: "Components/Menu",
 };
 
+// Story versions
 const MenuItemPart = (args: MenuItemProps) => (
   <MemoryRouter>
     <MenuItem {...args} />

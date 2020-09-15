@@ -1,21 +1,22 @@
 //
-// Divider component
+// Divider story
 //
 
 // Imports
 import React from "react";
-
 import Divider, {
   DividerProps,
   DividerNoBorder,
   ProjectDivider,
 } from "./divider";
 
+// Story
 export default {
   component: Divider,
   title: "Components/Divider",
 };
 
+// Story versions
 export const Default = (args: DividerProps) => <Divider {...args} />;
 Default.args = { title: "the content" };
 

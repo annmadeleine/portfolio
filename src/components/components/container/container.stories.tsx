@@ -1,10 +1,9 @@
 //
-// Container component
+// Container story
 //
 
 // Imports
 import React from "react";
-
 import Container, {
   ContainerProps,
   ItemSmall,
@@ -13,11 +12,13 @@ import Container, {
 } from "./container";
 import Paragraph from "../paragraph/paragraph";
 
+// Story
 export default {
   component: Container,
   title: "Components/Container",
 };
 
+// Story versions
 export const Default = (args: ContainerProps) => <Container {...args} />;
 Default.args = { children: Paragraph };
 

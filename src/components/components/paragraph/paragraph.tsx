@@ -1,6 +1,12 @@
+//
+// Paragraph component
+//
+
+// Imports
 import React from "react";
 import "./paragraph.scss";
 
+// Props
 export interface ParagraphProps {
   text?: string;
   client?: string;
@@ -8,6 +14,7 @@ export interface ParagraphProps {
   showHoverEffect?: boolean;
 }
 
+// Paragraph versions
 export default function Paragraph({ text }: ParagraphProps) {
   return <p className="paragraph">{text}</p>;
 }

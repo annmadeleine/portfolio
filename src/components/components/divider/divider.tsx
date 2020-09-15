@@ -1,12 +1,19 @@
+//
+// Background component
+//
+
+// Imports
 import React from "react";
 import "./divider.scss";
 
+// Props
 export interface DividerProps {
   title: string;
   hoverTitle?: string;
   showHoverEffect?: boolean;
 }
 
+// Divider versions
 export default function Divider({ title }: DividerProps) {
   return (
     <div className="divider">

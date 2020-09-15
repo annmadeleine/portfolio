@@ -4,5 +4,5 @@
 
 export const fonts = [
   { name: "$font-sansserif", fontCode: "Montserrat" },
-  { name: "$font-serif", fontCode: "Playfair Display" },
+  { name: "$font-serif", fontCode: "Libre Caslon Display" },
 ];

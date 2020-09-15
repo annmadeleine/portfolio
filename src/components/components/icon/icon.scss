@@ -1,9 +1,11 @@
 //
-// Styling for icon
+// Icon styling
 //
 
+// Import
 @import "../../../styles/variables";
 
+// Styling
 .icon {
   &.arrow-down {
     position: relative;
@@ -14,6 +16,7 @@
   }
 }
 
+// Animation
 @keyframes bounce {
   from {
     transform: translateY(-120px);

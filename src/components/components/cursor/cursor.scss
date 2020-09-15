@@ -1,9 +1,11 @@
 //
-// Styling for cursor
+// Cursor styling
 //
 
+// Imports
 @import "../../../styles/variables";
 
+// Styling
 .cursor {
   width: $typography-md;
   height: $typography-md;
@@ -28,9 +30,4 @@
 
 .cursor--clicked {
   transform: translate(-50%, -50%) scale(0.9);
-}
-
-html,
-body {
-  cursor: none;
 }

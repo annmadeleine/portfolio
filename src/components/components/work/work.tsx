@@ -1,6 +1,10 @@
+//
+// Work component
+//
+
+// Imports
 import React, { useState } from "react";
 import "./work.scss";
-
 import { ParagraphRotated } from "../paragraph/paragraph";
 import { ProjectImage } from "../image/image";
 import { ProjectDivider } from "../divider/divider";
@@ -12,6 +16,7 @@ import {
 } from "../container/container";
 import { TitleProject } from "../title/title";
 
+// Props
 export interface WorkProps {
   link: string;
   client: string;
@@ -24,6 +29,7 @@ export interface WorkProps {
   id?: string;
 }
 
+// Work versions
 export default function Work({
   link,
   client,

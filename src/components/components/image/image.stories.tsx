@@ -1,18 +1,19 @@
 //
-// Image component
+// Image story
 //
 
 // Imports
 import React from "react";
-
 import Image, { ImageProps, HeaderImage, ProjectImage } from "./image";
 import img from "../../../images/mockup.jpg";
 
+// Story
 export default {
   component: Image,
   title: "Components/Image",
 };
 
+// Story versions
 export const Default = (args: ImageProps) => <Image {...args} />;
 Default.args = { src: { img }, alt: "" };
 

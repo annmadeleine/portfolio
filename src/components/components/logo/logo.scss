@@ -1,9 +1,11 @@
 //
-// Styling for logo
+// Logo styling
 //
 
+// Imports
 @import "../../../styles/variables";
 
+// Styling
 .logo {
   stroke-dasharray: 400;
   stroke-dashoffset: 400;
@@ -11,14 +13,15 @@
   stroke: #000;
   stroke-miterlimit: 10;
   stroke-width: 1;
-  animation: animate 2s linear 0.5s forwards;
+  animation: draw 2s linear 0.5s forwards;
 
   &.white {
     stroke: #fff;
   }
 }
 
-@keyframes animate {
+// Animation
+@keyframes draw {
   to {
     stroke-dashoffset: 0;
   }

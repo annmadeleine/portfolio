@@ -1,5 +1,5 @@
 //
-// Button component
+// Title story
 //
 
 // Imports
@@ -11,11 +11,13 @@ import Title, {
   TitleProject,
 } from "./title";
 
+// Story
 export default {
   component: Title,
   title: "Components/Title",
 };
 
+// Story versions
 export const Default = (args: TitleProps) => <Title {...args} />;
 Default.args = { labelUp: "Creative", labelDown: "Developer" };
 

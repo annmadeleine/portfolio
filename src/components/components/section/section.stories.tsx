@@ -1,16 +1,18 @@
 //
-// Logo component
+// Section story
 //
 
 // Imports
 import React from "react";
 import Section, { SectionProps } from "./section";
 
+// Story
 export default {
   component: Section,
   title: "Components/Section",
 };
 
+// Section versions
 export const Default = (args: SectionProps) => <Section {...args} />;
 Default.args = {
   title: "Title",

@@ -1,5 +1,5 @@
 //
-// Typography variables converted into ts for Storybook.
+// Spacing variables converted into ts for Storybook.
 //
 
 export const spacings = [
