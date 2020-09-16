@@ -42,7 +42,7 @@ function Info() {
             <Fade bottom>
               <Section
                 title="about"
-                text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz."
+                text="Currently looking for new opportunities to work alongside passionate developers and designers. Learning and developing my skills through course sites like Udemy, with focus on React, Typescript, styled components and Storybook. Have previously worked with Wordpress, Umbraco, Vue and Angular. With a big interest in the design and UX, I have experience in several Adobe programs like Photoshop, Indesign and XD. I’ve also been testing out tools like Sketch, Figma and Invision Studio."
               />
               <SectionSocial title="contact" socials={socials} />
             </Fade>
