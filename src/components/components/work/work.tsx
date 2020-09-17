@@ -25,7 +25,6 @@ export interface WorkProps {
   alt: string;
   title: string;
   label: string;
-  hoverTitle: string;
   id?: string;
 }
 
@@ -38,7 +37,6 @@ export default function Work({
   alt,
   title,
   label,
-  hoverTitle,
   id,
 }: WorkProps) {
   const [isHovering, setIsHovering] = useState(false);

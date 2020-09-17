@@ -1,6 +1,6 @@
 import React from "react";
 import Info from "./info";
-import Project from "./project";
+import Brands from "./brands";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import * as Reveal from "react-reveal/Fade";
 
@@ -16,6 +16,7 @@ import Container, {
 } from "./components/components/container/container";
 import Work from "./components/components/work/work";
 import img from "./images/mockup-square.jpg";
+import brandsImg from "./images/intersport/intersport_brands_work.png";
 import IconArrowDown from "./components/components/icon/icon";
 
 export default function App() {
@@ -25,7 +26,7 @@ export default function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/info" component={Info} />
-          <Route path="/project" component={Project} />
+          <Route path="/brands" component={Brands} />
         </Switch>
       </div>
     </Router>
@@ -54,14 +55,13 @@ const Home = () => (
     <Reveal bottom>
       <Work
         id="work"
-        link="/project"
-        label="Branding"
-        client="Client"
+        link="/brands"
+        label="Brands"
+        client="Intersport"
         year="2020"
-        src={img}
+        src={brandsImg}
         alt="Detta är en bild"
         title="01"
-        hoverTitle="Explore"
       />
       <Work
         link="/project"
@@ -71,37 +71,6 @@ const Home = () => (
         src={img}
         alt="Detta är en bild"
         title="02"
-        hoverTitle="Explore"
-      />
-      <Work
-        link="/project"
-        label="Title"
-        client="Wow"
-        year="2018"
-        src={img}
-        alt="Detta är en bild"
-        title="02"
-        hoverTitle="Explore"
-      />
-      <Work
-        link="/project"
-        label="Title"
-        client="Wow"
-        year="2018"
-        src={img}
-        alt="Detta är en bild"
-        title="02"
-        hoverTitle="Explore"
-      />
-      <Work
-        link="/project"
-        label="Title"
-        client="Wow"
-        year="2018"
-        src={img}
-        alt="Detta är en bild"
-        title="02"
-        hoverTitle="Explore"
       />
     </Reveal>
   </div>
