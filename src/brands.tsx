@@ -25,7 +25,7 @@ import brandsHeader from "./images/intersport/intersport_brands_header.png";
 import Section from "./components/components/section/section";
 import Link from "./components/components/link/link";
 
-function Project() {
+function Brands() {
   return (
     <div className="Info">
       <BackgroundDark />
@@ -70,4 +70,4 @@ function Project() {
   );
 }
 
-export default Project;
+export default Brands;
