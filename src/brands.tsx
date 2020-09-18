@@ -50,7 +50,7 @@ function Brands() {
                 <ParagraphSmall text="Front-end development"></ParagraphSmall>
               </ItemSmall>
               <ItemBig>
-                <ParagraphRight text="Being part of the international sports trade chain Intersport I got the task to remake the brand's page. The page is meant to show the customer all the available brands and the customer should be able to click to show the corresponding products. The design of the page was pre-made but I had the opportunity to add small features to enhance the UX." />
+                <ParagraphRight text="Being part of the international sports trade chain Intersport I got the task to remake the brand's page. The brand's page is meant to show the customer all the available brands and the customer should be able to click to show the corresponding products. The design of the page was pre-made but I had the opportunity to add small features to enhance the UX." />
               </ItemBig>
             </Row>
             <Section
