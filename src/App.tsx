@@ -1,6 +1,7 @@
 import React from "react";
 import Info from "./info";
 import Brands from "./brands";
+import Portfolio from "./portfolio";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import * as Reveal from "react-reveal/Fade";
 
@@ -15,8 +16,8 @@ import Container, {
   Row,
 } from "./components/components/container/container";
 import Work from "./components/components/work/work";
-import img from "./images/mockup-square.jpg";
 import brandsImg from "./images/intersport/intersport_brands_work.png";
+import portfolioImg from "./images/portfolio/portfolio_work.png";
 import IconArrowDown from "./components/components/icon/icon";
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/" exact component={Home} />
           <Route path="/info" component={Info} />
           <Route path="/brands" component={Brands} />
+          <Route path="/portfolio" component={Portfolio} />
         </Switch>
       </div>
     </Router>
@@ -60,16 +62,16 @@ const Home = () => (
         client="Intersport"
         year="2020"
         src={brandsImg}
-        alt="Detta är en bild"
+        alt="Iphone with Intersports brand page."
         title="01"
       />
       <Work
-        link="/project"
-        label="Title"
-        client="Wow"
-        year="2018"
-        src={img}
-        alt="Detta är en bild"
+        link="/portfolio"
+        label="Portfolio"
+        client="Ann Madeleine"
+        year="2020"
+        src={portfolioImg}
+        alt="Iphone with Ann Madeleine's portfolio."
         title="02"
       />
     </Reveal>

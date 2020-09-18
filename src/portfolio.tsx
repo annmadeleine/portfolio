@@ -19,10 +19,13 @@ import Container, {
 } from "./components/components/container/container";
 import Image, { ImageHeader } from "./components/components/image/image";
 import { TitleProjectDetail } from "./components/components/title/title";
-import img from "./images/mockup.jpg";
+import img01 from "./images/portfolio/portfolio_iphone.png";
+import img02 from "./images/portfolio/portfolio_mac.png";
+import portfolioHeader from "./images/portfolio/portfolio_header.png";
 import Section from "./components/components/section/section";
+import Link from "./components/components/link/link";
 
-function Project() {
+function Portfolio() {
   return (
     <div className="Info">
       <BackgroundDark />
@@ -31,8 +34,8 @@ function Project() {
         <Name link="/" label="Ann Madeleine" />
         <MenuItemDark link="/info" label="info"></MenuItemDark>
       </Menu>
-      <ImageHeader src={img} alt="Test" />
-      <TitleProjectDetail label="Branding" />
+      <ImageHeader src={portfolioHeader} alt="Test" />
+      <TitleProjectDetail label="Portfolio" />
       <Container>
         <Column>
           <Fade bottom>
@@ -40,27 +43,26 @@ function Project() {
             <Row>
               <ItemSmall>
                 <DividerNoBorder title="Client" />
-                <ParagraphSmall text="Company"></ParagraphSmall>
+                <Link label="Madeleine" link="https://www.annmadeleine.se/" />
                 <DividerNoBorder title="Year" />
-                <ParagraphSmall text="Year"></ParagraphSmall>
-                <DividerNoBorder title="Services" />
-                <ParagraphSmall text="Service"></ParagraphSmall>
+                <ParagraphSmall text="2020"></ParagraphSmall>
+                <DividerNoBorder title="Role" />
+                <ParagraphSmall text="Design and Front-end development"></ParagraphSmall>
               </ItemSmall>
               <ItemBig>
-                <ParagraphRight text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz." />
+                <ParagraphRight text="A website to showcase my work as well as challenge myself to create and learn as a creative developer." />
               </ItemBig>
             </Row>
             <Section
               title="The Process"
-              text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz."
+              text="My portfolio is built with the help of React and Typescript in Visual Studio Code. Components were created in Storybook with the help of SCSS and BEM. The design and images, edited with the help of Adobe XD, Adobe Photoshop, and Adobe Illustrator. "
             />
             <Section
-              title="The Process"
-              text="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz."
+              title="The Result"
+              text="A portfolio where I can show my work and challenge myself to code new components. "
             />
-            <Image src={img} alt="Test" />
-            <Image src={img} alt="Test" />
-            <Image src={img} alt="Test" />
+            <Image src={img01} alt="Test" />
+            <Image src={img02} alt="Test" />
           </Fade>
         </Column>
       </Container>
@@ -68,4 +70,4 @@ function Project() {
   );
 }
 
-export default Project;
+export default Portfolio;
