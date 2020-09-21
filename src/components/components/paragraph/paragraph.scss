@@ -20,8 +20,18 @@
   transition: all ease $time-sm;
 
   &__right {
-    text-align: right;
-    margin: $spacing-md 0 $spacing-xl $spacing-xl;
+    text-align: left;
+    margin: $spacing-md 0 $spacing-xl 0;
+
+    @media (min-width: $breakpoint-sm) {
+      text-align: right;
+      margin: $spacing-md 0 $spacing-xl $spacing-xl;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      text-align: right;
+      margin: $spacing-md 0 $spacing-xl $spacing-xl;
+    }
   }
 
   &__small {
