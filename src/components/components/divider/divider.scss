@@ -36,6 +36,18 @@
     &__no-margin {
       margin: $spacing-md 0 0 0;
     }
+
+    &__hidden {
+      display: block;
+
+      @media (min-width: $breakpoint-sm) {
+        display: none;
+      }
+
+      @media (min-width: $breakpoint-lg) {
+        display: none;
+      }
+    }
   }
 
   &__work {

@@ -25,8 +25,16 @@
 
   &__row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
+
+    @media (min-width: $breakpoint-sm) {
+      flex-direction: row;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      flex-direction: row;
+    }
   }
 
   &__column {
@@ -58,11 +66,19 @@
 }
 
 .item {
-  width: 10%;
+  width: 100%;
+
+  @media (min-width: $breakpoint-sm) {
+    width: 10%;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    width: 10%;
+  }
 
   &__small {
     position: relative;
-    flex-grow: 3;
+    flex-grow: 4;
 
     @media (min-width: $breakpoint-sm) {
       position: relative;
@@ -80,7 +96,7 @@
   }
 
   &__big {
-    flex-grow: 20;
+    flex-grow: 10;
   }
 
   &__collapse {

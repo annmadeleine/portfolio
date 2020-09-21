@@ -30,6 +30,16 @@ export function DividerNoBorder({ title }: DividerProps) {
   );
 }
 
+export function DividerNoBorderHidden({ title }: DividerProps) {
+  return (
+    <div className="divider">
+      <div className="divider__title divider__title__no-margin divider__title__hidden">
+        {title}
+      </div>
+    </div>
+  );
+}
+
 export function DividerWork({ title, showHoverEffect }: DividerProps) {
   return (
     <div className="divider divider__max-width">

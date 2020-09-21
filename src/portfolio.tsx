@@ -6,6 +6,7 @@ import Name from "./components/components/name/name";
 import { BackgroundDark } from "./components/components/background/background";
 import Divider, {
   DividerNoBorder,
+  DividerNoBorderHidden,
 } from "./components/components/divider/divider";
 import {
   ParagraphRight,
@@ -43,13 +44,17 @@ function Portfolio() {
             <Row>
               <ItemSmall>
                 <DividerNoBorder title="Client" />
-                <Link label="Madeleine" link="https://www.annmadeleine.se/" />
+                <Link
+                  label="Ann Madeleine"
+                  link="https://www.annmadeleine.se/"
+                />
                 <DividerNoBorder title="Year" />
                 <ParagraphSmall text="2020"></ParagraphSmall>
                 <DividerNoBorder title="Role" />
                 <ParagraphSmall text="Design and Front-end development"></ParagraphSmall>
               </ItemSmall>
               <ItemBig>
+                <DividerNoBorderHidden title="Info" />
                 <ParagraphRight text="A website to showcase my work as well as challenge myself to create and learn as a creative developer." />
               </ItemBig>
             </Row>

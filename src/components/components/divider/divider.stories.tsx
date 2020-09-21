@@ -4,7 +4,12 @@
 
 // Imports
 import React from "react";
-import Divider, { DividerProps, DividerNoBorder, DividerWork } from "./divider";
+import Divider, {
+  DividerProps,
+  DividerNoBorder,
+  DividerNoBorderHidden,
+  DividerWork,
+} from "./divider";
 
 // Story
 export default {
@@ -18,6 +23,11 @@ Default.args = { title: "the content" };
 
 export const NoBorder = (args: DividerProps) => <DividerNoBorder {...args} />;
 NoBorder.args = { title: "the content" };
+
+export const NoBorderHidden = (args: DividerProps) => (
+  <DividerNoBorderHidden {...args} />
+);
+NoBorderHidden.args = { title: "the content" };
 
 export const Project = (args: DividerProps) => <DividerWork {...args} />;
 Project.args = { title: "01", hoverTitle: "Explore" };
