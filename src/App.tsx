@@ -1,6 +1,8 @@
 import React from "react";
 import Info from "./info";
-import Brands from "./brands";
+import Intersport from "./intersport";
+import StenaLine from "./stenaline";
+import Wipcore from "./wipcore";
 import Portfolio from "./portfolio";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import * as Reveal from "react-reveal/Fade";
@@ -27,7 +29,9 @@ export default function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/info" component={Info} />
-          <Route path="/brands" component={Brands} />
+          <Route path="/intersport" component={Intersport} />
+          <Route path="/stenaline" component={StenaLine} />
+          <Route path="/wipcore" component={Wipcore} />
           <Route path="/portfolio" component={Portfolio} />
         </Switch>
       </div>
@@ -57,12 +61,12 @@ const Home = () => (
     <Reveal bottom>
       <Work
         id="work"
-        link="/brands"
-        label="Brands"
-        client="Intersport"
-        year="2020"
+        link="/stenaline"
+        label="Stena Line"
+        client="Stena Line"
+        year="2026"
         src={brandsImg}
-        alt="Iphone with Intersports brand page."
+        alt="Iphone with Stena Line page."
         title="01"
       />
       <Work
@@ -73,6 +77,24 @@ const Home = () => (
         src={portfolioImg}
         alt="Iphone with Ann Madeleine's portfolio."
         title="02"
+      />
+      <Work
+        link="/intersport"
+        label="Intersport"
+        client="Intersport"
+        year="2020"
+        src={brandsImg}
+        alt="Iphone with Intersports page."
+        title="03"
+      />
+      <Work
+        link="/wipcore"
+        label="Wipcore"
+        client="Wipcore"
+        year="2019"
+        src={portfolioImg}
+        alt="Iphone with Wipcore page."
+        title="04"
       />
     </Reveal>
   </div>

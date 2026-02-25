@@ -18,15 +18,11 @@ import Container, {
   ItemSmall,
   Row,
 } from "./components/components/container/container";
-import Image, { ImageHeader } from "./components/components/image/image";
 import { TitleProjectDetail } from "./components/components/title/title";
-import img01 from "./images/intersport/intersport_brands_iphone.png";
-import img02 from "./images/intersport/intersport_brands_mac.png";
-import brandsHeader from "./images/intersport/intersport_brands_header.png";
 import Section from "./components/components/section/section";
 import Link from "./components/components/link/link";
 
-function Brands() {
+function Wipcore() {
   return (
     <div className="Info">
       <BackgroundDark />
@@ -35,36 +31,33 @@ function Brands() {
         <Name link="/" label="Ann Madeleine" />
         <MenuItemDark link="/info" label="info"></MenuItemDark>
       </Menu>
-      <ImageHeader src={brandsHeader} alt="Test" />
-      <TitleProjectDetail label="Brands" />
+      <TitleProjectDetail label="Wipcore" />
       <Container>
         <Column>
           <Fade bottom>
-            <Divider title="The Challange" />
+            <Divider title="Overview" />
             <Row>
               <ItemSmall>
                 <DividerNoBorder title="Client" />
-                <Link label="Intersport" link="https://www.intersport.se/" />
+                <Link label="Wipcore" link="#" />
                 <DividerNoBorder title="Year" />
-                <ParagraphSmall text="2020"></ParagraphSmall>
+                <ParagraphSmall text="2019"></ParagraphSmall>
                 <DividerNoBorder title="Role" />
                 <ParagraphSmall text="Front-end development"></ParagraphSmall>
               </ItemSmall>
               <ItemBig>
                 <DividerNoBorderHidden title="Info" />
-                <ParagraphRight text="Being part of the international sports trade chain Intersport, I got the task to remake the brand's page. The brand's page is meant to show the customer all the available brands and the customer should be able to click to show the corresponding products. The design of the page was pre-made but I had the opportunity to add small features to enhance the UX." />
+                <ParagraphRight text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada." />
               </ItemBig>
             </Row>
             <Section
               title="The Process"
-              text="Working with the pre-made designs using React, Typescript, and Storybook to complete a component with the help of Visual Studio Code."
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
             />
             <Section
               title="The Result"
-              text="A brand's page with a new design that works smoothly on different devices. With the help of a fixed alphabetic menu, you can scroll between the different brands that Intersport offers."
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet."
             />
-            <Image src={img01} alt="Test" />
-            <Image src={img02} alt="Test" />
           </Fade>
         </Column>
       </Container>
@@ -72,4 +65,4 @@ function Brands() {
   );
 }
 
-export default Brands;
+export default Wipcore;
