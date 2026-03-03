@@ -39,7 +39,7 @@ function StenaLine() {
             <Row>
               <ItemSmall>
                 <DividerNoBorder title="Client" />
-                <Link label="Stena Line" link="https://www.stenaline.com/" />
+                <Link label="Stena Line" link="https://stenaline.com/media/stories/ai-assisted-vessels/" />
                 <DividerNoBorder title="Year" />
                 <ParagraphSmall text="2026"></ParagraphSmall>
                 <DividerNoBorder title="Role" />
@@ -47,16 +47,16 @@ function StenaLine() {
               </ItemSmall>
               <ItemBig>
                 <DividerNoBorderHidden title="Info" />
-                <ParagraphRight text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo." />
+                <ParagraphRight text="Designing and building UX and front-end features for Stena Voyage Optimisation in close collaboration with vessel crew to boost vessel performance." />
               </ItemBig>
             </Row>
             <Section
-              title="The Process"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
+              title="The Experience"
+              text="I am currently working on the Stena Voyage Optimisation project, focusing on UX design and front-end development. I primarily work with Figma, React, and Redux to design and implement intuitive user interfaces, collaborating directly with vessel crew to create a UX that works seamlessly in a nautical environment. In addition, I have contributed to Stena Weather Service, which provides weather data to Voyage Optimisation, helping ensure the app integrates accurate and actionable environmental information."
             />
             <Section
               title="The Result"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet."
+              text="Stena Voyage Optimisation is an AI-powered tool that supports captains and crew in optimising fuel usage and reducing CO₂ emissions across the Stena Line fleet. By combining AI, nautical expertise, and sensor data, the system provides actionable insights that improve vessel performance and create measurable environmental and operational impact."
             />
           </Fade>
         </Column>

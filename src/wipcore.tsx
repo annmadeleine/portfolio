@@ -39,7 +39,7 @@ function Wipcore() {
             <Row>
               <ItemSmall>
                 <DividerNoBorder title="Client" />
-                <Link label="Wipcore" link="#" />
+                <Link label="Wipcore" link="https://www.mardigras.se" />
                 <DividerNoBorder title="Year" />
                 <ParagraphSmall text="2019"></ParagraphSmall>
                 <DividerNoBorder title="Role" />
@@ -47,17 +47,17 @@ function Wipcore() {
               </ItemSmall>
               <ItemBig>
                 <DividerNoBorderHidden title="Info" />
-                <ParagraphRight text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada." />
+                <ParagraphRight text="I started my career in web development at Wipcore (now Mardi Gras), working with front-end development, modern CMS platforms, and reusable components for web and e-commerce projects." />
               </ItemBig>
             </Row>
             <Section
-              title="The Process"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
-            />
-            <Section
-              title="The Result"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet."
-            />
+  title="The Experience"
+  text={`At Wipcore (now Mardi Gras), my main focus was front-end development as well as contributing to the company’s internal culture and well-being. \n
+     I worked with several clients across different industries, including Jaktia and Doggy, participating in client meetings and developing solutions tailored to their needs. \n
+     During my time there, I gained experience working with CMS platforms such as Umbraco, WordPress, and Episerver, as well as programming languages and frameworks like HTML, SCSS, PHP, JavaScript, jQuery, Vue, and Angular.  
+I developed reusable components for Wipcore’s internal component library and worked on the development of the e-commerce platform Enova. \n
+In addition to my technical responsibilities, I was part of a smaller internal group focused on improving the workplace environment, organizing company kick-offs, social events, and smaller gatherings.`}
+/>
           </Fade>
         </Column>
       </Container>
