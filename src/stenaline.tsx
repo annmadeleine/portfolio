@@ -52,7 +52,7 @@ function StenaLine() {
             </Row>
             <Section
               title="The Experience"
-              text="I am currently working on the Stena Voyage Optimisation project, focusing on UX design and front-end development. I primarily work with Figma, React, and Redux to design and implement intuitive user interfaces, collaborating directly with vessel crew to create a UX that works seamlessly in a nautical environment. In addition, I have contributed to Stena Weather Service, which provides weather data to Voyage Optimisation, helping ensure the app integrates accurate and actionable environmental information."
+              text="I am currently working on the Stena Voyage Optimisation project, focusing on UX design and front-end development. I primarily work with Figma, React, and Redux to design and implement intuitive user interfaces, collaborating directly with vessel crew to create UX that works seamlessly in a nautical environment. In addition, I have contributed to Stena Weather Service, which provides weather data to Voyage Optimisation, helping ensure the app integrates accurate and actionable environmental information."
             />
             <Section
               title="The Result"

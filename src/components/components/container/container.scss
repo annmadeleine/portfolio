@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   margin: $spacing-lg $spacing-md $spacing-md $spacing-md;
+  min-height: 100vh;
 
   @media (min-width: $breakpoint-sm) {
     margin: $spacing-lg $spacing-md $spacing-md $spacing-md;
