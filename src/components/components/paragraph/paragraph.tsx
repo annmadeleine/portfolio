@@ -16,7 +16,18 @@ export interface ParagraphProps {
 
 // Paragraph versions
 export default function Paragraph({ text }: ParagraphProps) {
-  return <p className="paragraph">{text}</p>;
+  return (
+    <p className="paragraph">
+      {text
+        ? text.split('\n').map((line, idx) => (
+            <React.Fragment key={idx}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))
+        : null}
+    </p>
+  );
 }
 
 export function ParagraphRight({ text }: ParagraphProps) {

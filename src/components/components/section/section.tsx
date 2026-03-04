@@ -7,6 +7,7 @@ import React from "react";
 import Divider from "../divider/divider";
 import Paragraph from "../paragraph/paragraph";
 import Link from "../link/link";
+import "./section.scss";
 
 // Props
 export interface SectionProps {
@@ -31,7 +32,7 @@ export default function Section({ title, text }: SectionProps) {
 
 export function SectionSocial({ title, socials }: SectionSocialProps) {
   return (
-    <div className="section">
+    <div className="section section__social">
       <Divider title={title} />
       {socials.map((social) => (
         <Link label={social.label} link={social.link} />

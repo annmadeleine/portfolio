@@ -20,6 +20,8 @@ import Container, {
 import Work from "./components/components/work/work";
 import brandsImg from "./images/intersport/intersport_brands_work.png";
 import portfolioImg from "./images/portfolio/portfolio_work.png";
+import stenalineImg from "./images/stenaline/stenaline_work.png";
+import wipcoreImg from "./images/wipcore/wipcore_work.png";
 import IconArrowDown from "./components/components/icon/icon";
 
 export default function App() {
@@ -65,7 +67,7 @@ const Home = () => (
         label="Stena Line"
         client="Stena Line"
         year="2026"
-        src={brandsImg}
+        src={stenalineImg}
         alt="Iphone with Stena Line page."
         title="01"
       />
@@ -92,7 +94,7 @@ const Home = () => (
         label="Wipcore"
         client="Wipcore"
         year="2019"
-        src={portfolioImg}
+        src={wipcoreImg}
         alt="Iphone with Wipcore page."
         title="04"
       />

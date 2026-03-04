@@ -1,0 +1,11 @@
+//
+// Section styling
+//
+
+@import "../../../styles/variables";
+
+.section {
+  &__social {
+    padding-bottom: $spacing-xxl;
+  }
+}

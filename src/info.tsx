@@ -21,7 +21,6 @@ const socials = [
     label: "LinkedIn",
     link: "https://www.linkedin.com/in/madeleine-olson/",
   },
-  { id: 3, label: "Github", link: "https://github.com/madeleineolson" },
 ];
 
 function Info() {
@@ -42,7 +41,12 @@ function Info() {
             <Fade bottom>
               <Section
                 title="about"
-                text="Currently looking for new opportunities to work alongside passionate developers and designers. Learning and developing my skills through course sites like Udemy, with focus on React, Typescript, styled components and Storybook. Have previously worked with Wordpress, Umbraco, Vue and Angular. With a big interest in the design and UX, I have experience in several Adobe programs like Photoshop, Indesign and XD. I’ve also been testing out tools like Sketch, Figma and Invision Studio."
+                text={`I am currently on parental leave from my role as UX Designer and Frontend Developer at Stena Line.\n
+At Stena Line, I work exclusively on an AI-assisted vessels application. In this role, I combine UX design and frontend development, primarily using React, TypeScript, and Figma. I collaborate closely with stakeholders and developers to design and build features that support daily operations onboard.
+My work involves translating user needs and operational requirements into clear, usable interfaces, and ensuring that the design works well in practice once implemented.
+\nPreviously, I have worked with WordPress, Umbraco, Vue, and Angular. I have a strong interest in design and UX, with experience in Adobe Photoshop, InDesign, XD, Sketch, Figma, and InVision Studio.\n
+During my parental leave, I completed the course Programming in Python: Basic and Preparatory Course at Luleå University of Technology to further develop my technical skills.\n
+I enjoy working at the intersection of design and development and care about building digital products that are practical, well-structured, and easy to use.`}
               />
               <SectionSocial title="contact" socials={socials} />
             </Fade>
